@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View your assignments, submit work, and track submission statuses all from the StudentHub assignments module." />
+  <title>Assignments — StudentHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── Site Header ──────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="StudentHub home">
+        <div class="logo-icon" aria-hidden="true">S</div>
+        <span class="logo-text">Student<span>Hub</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html" class="nav-cta">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Breadcrumb ────────────────────────────────────────── -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="breadcrumb-inner">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><span aria-current="page">Assignments</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ── In-page Sub-nav ───────────────────────────────────── -->
+  <nav class="page-subnav" aria-label="Assignments sections">
+    <div class="page-subnav-inner">
+      <a href="#view-assignment">View Assignments</a>
+      <a href="#submit-assignment">Submit Assignment</a>
+      <a href="#submission-status">Submission Status</a>
+    </div>
+  </nav>
+
+  <!-- ── Main Content ─────────────────────────────────────── -->
+  <main id="main-content">
+
+    <div class="page-hero">
+      <h1>📝 Assignments</h1>
+      <p>Browse, submit, and track all your academic assignments in one place.</p>
+    </div>
+
+    <!-- ──────────── SECTION 1: View Assignments ─────────── -->
+    <section id="view-assignment" class="content-section" aria-labelledby="view-assign-heading">
+      <div class="section-header">
+        <h2 id="view-assign-heading">View Assignments</h2>
+        <p>All pending and upcoming assignments for this semester.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:1rem;">
+
+        <article class="notice-article" aria-label="Assignment: DSA Lab Report">
+          <div class="notice-meta">
+            <span class="badge badge-danger">Due: 08 Aug 2026</span>
+            <span>CS301 — Data Structures</span>
+            <span>Prof. D. Patel</span>
+            <span>Max Marks: 20</span>
+          </div>
+          <h3 style="font-size:1rem;font-weight:700;color:#1a1f36;">Lab Report: Binary Search Tree Implementation</h3>
+          <p style="font-size:0.875rem;color:#5a6282;">
+            Implement a Binary Search Tree with insert, delete, and traversal operations in C++.
+            Submit a lab report (max 10 pages) with source code, output screenshots, and analysis.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;">
+            <span style="font-size:0.8rem;color:#5a6282;">📎 No attachment required</span>
+            <a href="#submit-assignment" class="btn btn-sm btn-solid" style="margin-left:auto;">Submit Now →</a>
+          </div>
+        </article>
+
+        <article class="notice-article" aria-label="Assignment: WDF Mini Project">
+          <div class="notice-meta">
+            <span class="badge badge-warning">Due: 12 Aug 2026</span>
+            <span>CS311 — Web Dev. Fundamentals</span>
+            <span>Prof. R. Shah</span>
+            <span>Max Marks: 30</span>
+          </div>
+          <h3 style="font-size:1rem;font-weight:700;color:#1a1f36;">Mini Project: Static Portfolio Website</h3>
+          <p style="font-size:0.875rem;color:#5a6282;">
+            Design a personal portfolio website using HTML5 and CSS only. Must include: Home, About,
+            Projects, and Contact pages. Submit a ZIP of your project folder and a live URL if possible.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;">
+            <span style="font-size:0.8rem;color:#5a6282;">📎 ZIP file required</span>
+            <a href="#submit-assignment" class="btn btn-sm btn-solid" style="margin-left:auto;">Submit Now →</a>
+          </div>
+        </article>
+
+        <article class="notice-article" aria-label="Assignment: Networks Assignment">
+          <div class="notice-meta">
+            <span class="badge badge-info">Due: 15 Aug 2026</span>
+            <span>CS321 — Computer Networks</span>
+            <span>Prof. A. Joshi</span>
+            <span>Max Marks: 15</span>
+          </div>
+          <h3 style="font-size:1rem;font-weight:700;color:#1a1f36;">Assignment 2: OSI vs TCP/IP Model Analysis</h3>
+          <p style="font-size:0.875rem;color:#5a6282;">
+            Write a detailed comparison of the OSI and TCP/IP reference models. Include a diagram for each
+            and explain the role of every layer with real-world protocol examples.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;">
+            <span style="font-size:0.8rem;color:#5a6282;">📎 PDF, max 5 pages</span>
+            <a href="#submit-assignment" class="btn btn-sm btn-solid" style="margin-left:auto;">Submit Now →</a>
+          </div>
+        </article>
+
+        <article class="notice-article" aria-label="Assignment: DBMS ER Diagram">
+          <div class="notice-meta">
+            <span class="badge badge-muted">Due: 20 Aug 2026</span>
+            <span>CS341 — DBMS</span>
+            <span>Prof. V. Trivedi</span>
+            <span>Max Marks: 25</span>
+          </div>
+          <h3 style="font-size:1rem;font-weight:700;color:#1a1f36;">ER Diagram &amp; Normalisation Exercise</h3>
+          <p style="font-size:0.875rem;color:#5a6282;">
+            Design an Entity-Relationship Diagram for a hospital management system. Convert the ER diagram
+            into relational schemas and normalise up to 3NF with justification.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;">
+            <span style="font-size:0.8rem;color:#5a6282;">📎 PDF or Word document</span>
+            <a href="#submit-assignment" class="btn btn-sm btn-solid" style="margin-left:auto;">Submit Now →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ──────────── SECTION 2: Submit Assignment ─────────── -->
+    <section id="submit-assignment" class="content-section" aria-labelledby="submit-assign-heading">
+      <div class="section-header">
+        <h2 id="submit-assign-heading">Submit Assignment</h2>
+        <p>Fill in the details below and upload your work.</p>
+      </div>
+
+      <div class="form-wrapper">
+        <form action="assignments.html" method="get" aria-label="Assignment submission form" novalidate>
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label for="submit-subject">Subject <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+              <select id="submit-subject" name="subject" required aria-required="true">
+                <option value="" disabled selected>Select subject</option>
+                <option value="cs301">CS301 — Data Structures &amp; Algorithms</option>
+                <option value="cs311">CS311 — Web Development Fundamentals</option>
+                <option value="cs321">CS321 — Computer Networks</option>
+                <option value="cs331">CS331 — Operating Systems</option>
+                <option value="ma301">MA301 — Discrete Mathematics</option>
+                <option value="cs341">CS341 — Database Management Systems</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="submit-assignment-title">Assignment Title <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+              <input
+                type="text"
+                id="submit-assignment-title"
+                name="assignment_title"
+                placeholder="e.g. Lab Report: BST Implementation"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="submit-enrollment">Enrollment Number <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+              <input
+                type="text"
+                id="submit-enrollment"
+                name="enrollment"
+                placeholder="22CS001"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="submit-date">Submission Date <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+              <input
+                type="date"
+                id="submit-date"
+                name="submission_date"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group form-full">
+              <label for="submit-remarks">Remarks / Notes</label>
+              <textarea
+                id="submit-remarks"
+                name="remarks"
+                placeholder="Any notes for the instructor (optional)..."
+              ></textarea>
+            </div>
+
+            <div class="form-group form-full">
+              <label for="submit-file">Upload File <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+              <input
+                type="file"
+                id="submit-file"
+                name="file"
+                accept=".pdf,.doc,.docx,.zip,.cpp,.java"
+                required
+                aria-required="true"
+                aria-describedby="file-hint"
+              />
+              <span class="field-hint" id="file-hint">Accepted: PDF, DOC, DOCX, ZIP, CPP, JAVA. Max size: 20MB.</span>
+            </div>
+
+            <div class="form-full form-actions">
+              <button type="submit" class="btn btn-primary" id="submit-assignment-btn">Submit Assignment</button>
+              <button type="reset" class="btn btn-outline" style="color:#5a6282;border-color:#d1d9f0;" id="reset-assignment-btn">Clear Form</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ──────────── SECTION 3: Submission Status ─────────── -->
+    <section id="submission-status" class="content-section" aria-labelledby="sub-status-heading">
+      <div class="section-header">
+        <h2 id="sub-status-heading">Submission Status</h2>
+        <p>Track the status of all your submitted assignments.</p>
+      </div>
+
+      <div class="table-wrapper">
+        <table aria-label="Assignment submission statuses">
+          <thead>
+            <tr>
+              <th scope="col">Assignment Title</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Submitted On</th>
+              <th scope="col">Status</th>
+              <th scope="col">Marks</th>
+              <th scope="col">Feedback</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sorting Algorithm Comparison</td>
+              <td>CS301</td>
+              <td>20 Jul 2026</td>
+              <td><span class="badge badge-success">Graded</span></td>
+              <td>18 / 20</td>
+              <td>Excellent analysis of time complexity.</td>
+            </tr>
+            <tr>
+              <td>HTML Forms Practice</td>
+              <td>CS311</td>
+              <td>25 Jul 2026</td>
+              <td><span class="badge badge-success">Graded</span></td>
+              <td>27 / 30</td>
+              <td>Good accessibility. Add more CSS animations.</td>
+            </tr>
+            <tr>
+              <td>Network Topology Report</td>
+              <td>CS321</td>
+              <td>28 Jul 2026</td>
+              <td><span class="badge badge-info">Under Review</span></td>
+              <td>—</td>
+              <td>Awaiting faculty review.</td>
+            </tr>
+            <tr>
+              <td>Process Scheduling Algorithms</td>
+              <td>CS331</td>
+              <td>01 Aug 2026</td>
+              <td><span class="badge badge-warning">Late</span></td>
+              <td>Pending</td>
+              <td>Submitted after deadline. 5 marks penalty may apply.</td>
+            </tr>
+            <tr>
+              <td>SQL Queries Exercise</td>
+              <td>CS341</td>
+              <td>02 Aug 2026</td>
+              <td><span class="badge badge-success">Graded</span></td>
+              <td>22 / 25</td>
+              <td>Correct queries. Document your assumptions next time.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="site-logo" aria-label="StudentHub home">
+          <div class="logo-icon" aria-hidden="true">S</div>
+          <span class="logo-text">Student<span>Hub</span></span>
+        </a>
+        <p>Your all-in-one academic management platform — built for modern students.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Modules</h3>
+        <ul>
+          <li><a href="attendance.html">Attendance</a></li>
+          <li><a href="assignments.html">Assignments</a></li>
+          <li><a href="timetable.html">Time Table</a></li>
+          <li><a href="study-material.html">Study Material</a></li>
+          <li><a href="notice-board.html">Notice Board</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h3>Contact</h3>
+        <address class="footer-contact" style="font-style:normal;">
+          <span>CHARUSAT University</span>
+          <span>Changa, Anand, Gujarat — 388421</span>
+          <a href="mailto:support@studenthub.edu">support@studenthub.edu</a>
+          <a href="tel:+912697265000">+91 2697 265000</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 StudentHub. All rights reserved.</p>
+      <p>Designed for CHARUSAT University — WDF Semester 3 Project</p>
+    </div>
+  </footer>
+
+</body>
+</html>
