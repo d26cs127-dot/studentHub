@@ -1,5 +1,6 @@
 # 🎓 StudentHub – Smart Campus Management Portal
 
+# Github - link :- https://github.com/d26cs127-dot/studentHub
 ## 📖 Overview
 
 StudentHub is a semester-long web application developed as part of the **Web Development Frameworks (ITUE203)** course. The portal provides a centralized platform where students can access academic resources, manage assignments, view attendance, check timetables, receive notices, and manage their profiles.
@@ -262,6 +263,8 @@ Chandubhai S. Patel Institute of Technology (CSPIT)
 CHARUSAT University
 
 ---
+
+
 
 # 📄 License
 

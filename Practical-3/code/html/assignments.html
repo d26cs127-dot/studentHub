@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View your assignments, submit work, and track submission statuses all from the StudentHub assignments module." />
+  <title>Assignments — StudentHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="bg-[#0f1729] shadow-lg sticky top-0 z-[100]" role="banner">
+    <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-2 md:gap-0 py-4 md:py-0 md:h-[4.5rem]">
+      <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+        <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+        <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+      </a>
+      <nav class="flex flex-wrap gap-0.5" aria-label="Primary navigation">
+        <a href="index.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Home</a>
+        <a href="about.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">About</a>
+        <a href="register.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Register</a>
+        <a href="login.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Login</a>
+        <a href="dashboard.html" class="bg-[#fbbf24] text-[#0f1729] text-sm font-bold px-4 py-1.5 rounded-full border border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:text-[#0f1729]">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="bg-white border-b border-[#d1d9f0]" aria-label="Breadcrumb">
+    <div class="max-w-[1200px] mx-auto px-6 py-2">
+      <ol class="flex flex-wrap items-center gap-1 text-xs text-[#5a6282]">
+        <li><a href="index.html" class="text-[#3b54b0] font-medium hover:underline">Home</a></li>
+        <li class="before:content-['›'] before:mx-1 before:text-[#8da2e0]"><a href="dashboard.html" class="text-[#3b54b0] font-medium hover:underline">Dashboard</a></li>
+        <li class="before:content-['›'] before:mx-1 before:text-[#8da2e0]"><span aria-current="page" class="text-[#1a1f36] font-semibold">Assignments</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <nav class="bg-white border-b border-[#d1d9f0] px-6 py-3 flex flex-wrap gap-3 text-sm" aria-label="Assignments sections">
+    <a href="#view-assignment" class="text-[#3b54b0] font-medium hover:underline">View Assignments</a>
+    <a href="#submit-assignment" class="text-[#3b54b0] font-medium hover:underline">Submit Assignment</a>
+    <a href="#submission-status" class="text-[#3b54b0] font-medium hover:underline">Submission Status</a>
+  </nav>
+
+  <main id="main-content" class="flex-1 max-w-[1200px] w-full mx-auto px-6 py-8 md:py-12">
+
+    <section class="relative bg-gradient-to-br from-[#172040] to-[#2b3f80] rounded-2xl px-8 py-8 md:py-10 mb-8 text-white overflow-hidden page-hero">
+      <div class="relative z-10">
+        <h1 class="text-white text-2xl md:text-4xl font-bold">📝 Assignments</h1>
+        <p class="text-[#c0ccf0] text-base md:text-lg">Browse, submit, and track all your academic assignments in one place.</p>
+      </div>
+    </section>
+
+    <section id="view-assignment" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="view-assign-heading">
+      <div class="section-header mb-6">
+        <h2 id="view-assign-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">View Assignments</h2>
+        <p class="text-[#5a6282] text-sm">All pending and upcoming assignments for this semester.</p>
+      </div>
+
+      <div class="flex flex-col gap-4">
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow" aria-label="Assignment: DSA Lab Report">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-red-100 text-red-700">Due: 08 Aug 2026</span>
+            <span>CS301 — Data Structures</span>
+            <span>Prof. D. Patel</span>
+            <span>Max Marks: 20</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">Lab Report: Binary Search Tree Implementation</h3>
+          <p class="text-sm text-[#5a6282] mt-1">
+            Implement a Binary Search Tree with insert, delete, and traversal operations in C++.
+            Submit a lab report (max 10 pages) with source code, output screenshots, and analysis.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-3">
+            <span class="text-xs text-[#5a6282]">📎 No attachment required</span>
+            <a href="#submit-assignment" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-semibold text-sm bg-[#2b3f80] text-white border-2 border-[#2b3f80] hover:bg-[#3b54b0] hover:border-[#3b54b0] hover:-translate-y-0.5 hover:shadow-md transition-all duration-250 ml-auto">Submit Now →</a>
+          </div>
+        </article>
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow" aria-label="Assignment: WDF Mini Project">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-yellow-100 text-yellow-800">Due: 12 Aug 2026</span>
+            <span>CS311 — Web Dev. Fundamentals</span>
+            <span>Prof. R. Shah</span>
+            <span>Max Marks: 30</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">Mini Project: Static Portfolio Website</h3>
+          <p class="text-sm text-[#5a6282] mt-1">
+            Design a personal portfolio website using HTML5 and CSS only. Must include: Home, About,
+            Projects, and Contact pages. Submit a ZIP of your project folder and a live URL if possible.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-3">
+            <span class="text-xs text-[#5a6282]">📎 ZIP file required</span>
+            <a href="#submit-assignment" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-semibold text-sm bg-[#2b3f80] text-white border-2 border-[#2b3f80] hover:bg-[#3b54b0] hover:border-[#3b54b0] hover:-translate-y-0.5 hover:shadow-md transition-all duration-250 ml-auto">Submit Now →</a>
+          </div>
+        </article>
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow" aria-label="Assignment: Networks Assignment">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-blue-100 text-blue-700">Due: 15 Aug 2026</span>
+            <span>CS321 — Computer Networks</span>
+            <span>Prof. A. Joshi</span>
+            <span>Max Marks: 15</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">Assignment 2: OSI vs TCP/IP Model Analysis</h3>
+          <p class="text-sm text-[#5a6282] mt-1">
+            Write a detailed comparison of the OSI and TCP/IP reference models. Include a diagram for each
+            and explain the role of every layer with real-world protocol examples.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-3">
+            <span class="text-xs text-[#5a6282]">📎 PDF, max 5 pages</span>
+            <a href="#submit-assignment" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-semibold text-sm bg-[#2b3f80] text-white border-2 border-[#2b3f80] hover:bg-[#3b54b0] hover:border-[#3b54b0] hover:-translate-y-0.5 hover:shadow-md transition-all duration-250 ml-auto">Submit Now →</a>
+          </div>
+        </article>
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow" aria-label="Assignment: DBMS ER Diagram">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-gray-100 text-gray-700">Due: 20 Aug 2026</span>
+            <span>CS341 — DBMS</span>
+            <span>Prof. V. Trivedi</span>
+            <span>Max Marks: 25</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">ER Diagram &amp; Normalisation Exercise</h3>
+          <p class="text-sm text-[#5a6282] mt-1">
+            Design an Entity-Relationship Diagram for a hospital management system. Convert the ER diagram
+            into relational schemas and normalise up to 3NF with justification.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-3">
+            <span class="text-xs text-[#5a6282]">📎 PDF or Word document</span>
+            <a href="#submit-assignment" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-semibold text-sm bg-[#2b3f80] text-white border-2 border-[#2b3f80] hover:bg-[#3b54b0] hover:border-[#3b54b0] hover:-translate-y-0.5 hover:shadow-md transition-all duration-250 ml-auto">Submit Now →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="submit-assignment" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="submit-assign-heading">
+      <div class="section-header mb-6">
+        <h2 id="submit-assign-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Submit Assignment</h2>
+        <p class="text-[#5a6282] text-sm">Fill in the details below and upload your work.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm">
+        <form action="assignments.html" method="get" aria-label="Assignment submission form" novalidate>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+            <div class="flex flex-col gap-1">
+              <label for="submit-subject" class="font-semibold text-sm text-[#1a1f36]">Subject <span class="text-red-500" aria-hidden="true">*</span></label>
+              <select id="submit-subject" name="subject" required aria-required="true" class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all">
+                <option value="" disabled selected>Select subject</option>
+                <option value="cs301">CS301 — Data Structures &amp; Algorithms</option>
+                <option value="cs311">CS311 — Web Development Fundamentals</option>
+                <option value="cs321">CS321 — Computer Networks</option>
+                <option value="cs331">CS331 — Operating Systems</option>
+                <option value="ma301">MA301 — Discrete Mathematics</option>
+                <option value="cs341">CS341 — Database Management Systems</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="submit-assignment-title" class="font-semibold text-sm text-[#1a1f36]">Assignment Title <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="submit-assignment-title"
+                name="assignment_title"
+                placeholder="e.g. Lab Report: BST Implementation"
+                required
+                aria-required="true"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="submit-enrollment" class="font-semibold text-sm text-[#1a1f36]">Enrollment Number <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="submit-enrollment"
+                name="enrollment"
+                placeholder="22CS001"
+                required
+                aria-required="true"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="submit-date" class="font-semibold text-sm text-[#1a1f36]">Submission Date <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="date"
+                id="submit-date"
+                name="submission_date"
+                required
+                aria-required="true"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+            </div>
+
+            <div class="col-span-1 md:col-span-2 flex flex-col gap-1">
+              <label for="submit-remarks" class="font-semibold text-sm text-[#1a1f36]">Remarks / Notes</label>
+              <textarea
+                id="submit-remarks"
+                name="remarks"
+                placeholder="Any notes for the instructor (optional)..."
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all min-h-[80px]"
+              ></textarea>
+            </div>
+
+            <div class="col-span-1 md:col-span-2 flex flex-col gap-1">
+              <label for="submit-file" class="font-semibold text-sm text-[#1a1f36]">Upload File <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="file"
+                id="submit-file"
+                name="file"
+                accept=".pdf,.doc,.docx,.zip,.cpp,.java"
+                required
+                aria-required="true"
+                aria-describedby="file-hint"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-[#eef3ff] file:text-[#3b54b0] hover:file:bg-[#dbeafe]"
+              />
+              <span class="field-hint text-xs text-[#5a6282] mt-1" id="file-hint">Accepted: PDF, DOC, DOCX, ZIP, CPP, JAVA. Max size: 20MB.</span>
+            </div>
+
+            <div class="col-span-1 md:col-span-2 flex flex-wrap gap-3 mt-2">
+              <button type="submit" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm bg-[#fbbf24] text-[#0f1729] border-2 border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(251,191,36,0.4)] transition-all duration-250">Submit Assignment</button>
+              <button type="reset" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm bg-transparent text-[#5a6282] border-2 border-[#d1d9f0] hover:bg-[#f1f5f9] hover:-translate-y-0.5 transition-all duration-250">Clear Form</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="submission-status" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="sub-status-heading">
+      <div class="section-header mb-6">
+        <h2 id="sub-status-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Submission Status</h2>
+        <p class="text-[#5a6282] text-sm">Track the status of all your submitted assignments.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse" aria-label="Assignment submission statuses">
+          <thead>
+            <tr class="bg-[#f1f5f9] border-b border-[#d1d9f0]">
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Assignment Title</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Subject</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Submitted On</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Status</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Marks</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Feedback</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">Sorting Algorithm Comparison</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS301</td>
+              <td class="py-3 px-4 text-[#1a1f36]">20 Jul 2026</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#d1fae5] text-[#065f46]">Graded</span></td>
+              <td class="py-3 px-4 text-[#1a1f36]">18 / 20</td>
+              <td class="py-3 px-4 text-[#5a6282]">Excellent analysis of time complexity.</td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">HTML Forms Practice</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS311</td>
+              <td class="py-3 px-4 text-[#1a1f36]">25 Jul 2026</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#d1fae5] text-[#065f46]">Graded</span></td>
+              <td class="py-3 px-4 text-[#1a1f36]">27 / 30</td>
+              <td class="py-3 px-4 text-[#5a6282]">Good accessibility. Add more CSS animations.</td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">Network Topology Report</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS321</td>
+              <td class="py-3 px-4 text-[#1a1f36]">28 Jul 2026</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#dbeafe] text-[#1e40af]">Under Review</span></td>
+              <td class="py-3 px-4 text-[#5a6282]">—</td>
+              <td class="py-3 px-4 text-[#5a6282]">Awaiting faculty review.</td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">Process Scheduling Algorithms</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS331</td>
+              <td class="py-3 px-4 text-[#1a1f36]">01 Aug 2026</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#fef3c7] text-[#92400e]">Late</span></td>
+              <td class="py-3 px-4 text-[#5a6282]">Pending</td>
+              <td class="py-3 px-4 text-[#5a6282]">Submitted after deadline. 5 marks penalty may apply.</td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">SQL Queries Exercise</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS341</td>
+              <td class="py-3 px-4 text-[#1a1f36]">02 Aug 2026</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#d1fae5] text-[#065f46]">Graded</span></td>
+              <td class="py-3 px-4 text-[#1a1f36]">22 / 25</td>
+              <td class="py-3 px-4 text-[#5a6282]">Correct queries. Document your assumptions next time.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gradient-to-br from-[#0f1729] to-[#172040] text-[#c0ccf0] mt-auto" role="contentinfo">
+    <div class="max-w-[1200px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+          <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+          <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+        </a>
+        <p class="text-[#8da2e0] text-sm mt-2 max-w-[35ch]">Your all-in-one academic management platform — built for modern students.</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Modules</h3>
+        <ul class="flex flex-col gap-2">
+          <li><a href="attendance.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Attendance</a></li>
+          <li><a href="assignments.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Assignments</a></li>
+          <li><a href="timetable.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Time Table</a></li>
+          <li><a href="study-material.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Study Material</a></li>
+          <li><a href="notice-board.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Notice Board</a></li>
+          <li><a href="profile.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Profile</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Contact</h3>
+        <address class="not-italic text-[#8da2e0] text-sm flex flex-col gap-2">
+          <span>CHARUSAT University</span>
+          <span>Changa, Anand, Gujarat — 388421</span>
+          <a href="mailto:support@studenthub.edu" class="hover:text-[#fbbf24] transition-colors">support@studenthub.edu</a>
+          <a href="tel:+912697265000" class="hover:text-[#fbbf24] transition-colors">+91 2697 265000</a>
+        </address>
+      </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-6 py-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-[#8da2e0]">
+      <p>© 2026 StudentHub. All rights reserved.</p>
+      <p>Designed for CHARUSAT University — WDF Semester 3 Project</p>
+    </div>
+  </footer>
+
+</body>
+</html>

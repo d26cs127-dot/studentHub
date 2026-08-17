@@ -5,32 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Manage your StudentHub profile — view personal information, edit your details, and update your account password securely." />
   <title>Profile — StudentHub</title>
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a href="#main-content">Skip to main content</a>
 
-  <!-- ── Site Header ──────────────────────────────────────── -->
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <a href="index.html" class="site-logo" aria-label="StudentHub home">
-        <div class="logo-icon" aria-hidden="true">S</div>
-        <span class="logo-text">Student<span>Hub</span></span>
+  <header role="banner">
+    <div>
+      <a href="index.html" aria-label="StudentHub home">
+        <div aria-hidden="true">S</div>
+        <span>Student<span>Hub</span></span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
+      <nav aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="register.html">Register</a>
         <a href="login.html">Login</a>
-        <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        <a href="dashboard.html">Dashboard</a>
       </nav>
     </div>
   </header>
 
-  <!-- ── Breadcrumb ────────────────────────────────────────── -->
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <div class="breadcrumb-inner">
+  <nav aria-label="Breadcrumb">
+    <div>
       <ol>
         <li><a href="index.html">Home</a></li>
         <li><a href="dashboard.html">Dashboard</a></li>
@@ -39,133 +36,116 @@
     </div>
   </nav>
 
-  <!-- ── In-page Sub-nav ───────────────────────────────────── -->
-  <nav class="page-subnav" aria-label="Profile sections">
-    <div class="page-subnav-inner">
-      <a href="#personal-information">Personal Information</a>
-      <a href="#edit-profile">Edit Profile</a>
-      <a href="#change-password">Change Password</a>
-    </div>
+  <nav aria-label="Profile sections">
+    <a href="#personal-information">Personal Information</a>
+    <a href="#edit-profile">Edit Profile</a>
+    <a href="#change-password">Change Password</a>
   </nav>
 
-  <!-- ── Main Content ─────────────────────────────────────── -->
   <main id="main-content">
 
-    <div class="page-hero">
-      <h1>👤 My Profile</h1>
-      <p>Manage your personal information and account settings.</p>
-    </div>
+    <section>
+      <div>
+        <h1>👤 My Profile</h1>
+        <p>Manage your personal information and account settings.</p>
+      </div>
+    </section>
 
-    <!-- ──────────── SECTION 1: Personal Information ─────── -->
-    <section id="personal-information" class="content-section" aria-labelledby="personal-info-heading">
+    <section id="personal-information" aria-labelledby="personal-info-heading">
 
-      <!-- Avatar + name -->
-      <div class="profile-avatar-section">
-        <div class="profile-avatar-large" role="img" aria-label="Student avatar with initials A M">AM</div>
-        <div class="profile-info">
+      <div>
+        <div role="img" aria-label="Student avatar with initials A M">AM</div>
+        <div>
           <h2 id="personal-info-heading">Niraj Visavadiya</h2>
-          <p>d26cs127· B.Tech Computer Science · Semester 3</p>
-          <p style="margin-top:0.25rem;">
-            <span class="badge badge-success" style="font-size:0.75rem;">Active Student</span>
-            <span class="badge badge-info" style="font-size:0.75rem;margin-left:0.25rem;">Division B</span>
-          </p>
+          <p>d26cs127 · B.Tech Computer Science · Semester 3</p>
+          <div>
+            <span>Active Student</span>
+            <span>Division B</span>
+          </div>
         </div>
       </div>
 
-      <div class="info-list" role="list" aria-label="Personal information details">
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Full Name</span>
-          <span class="info-value">Niraj ChimanBhai Visavadiya</span>
+      <div>
+        <div>
+          <div>
+            <span>Full Name</span>
+            <span>Niraj ChimanBhai Visavadiya</span>
+          </div>
+          <div>
+            <span>Enrollment No.</span>
+            <span>d26cs127</span>
+          </div>
+          <div>
+            <span>University Email</span>
+            <span><a href="mailto:d26cs127@charusat.edu.in">d26cs127@charusat.edu.in</a></span>
+          </div>
+          <div>
+            <span>Mobile Number</span>
+            <span><a href="tel:+919876543210">+91 98765 43210</a></span>
+          </div>
+          <div>
+            <span>Date of Birth</span>
+            <span>12 May 2006</span>
+          </div>
+          <div>
+            <span>Gender</span>
+            <span>Male</span>
+          </div>
         </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Enrollment No.</span>
-          <span class="info-value">d26cs127</span>
+        <div>
+          <div>
+            <span>Program</span>
+            <span>B.Tech — Computer Science &amp; Engineering</span>
+          </div>
+          <div>
+            <span>Current Semester</span>
+            <span>Semester 3 (Academic Year 2026–27)</span>
+          </div>
+          <div>
+            <span>Division</span>
+            <span>Division B · Roll No. d26cs127</span>
+          </div>
+          <div>
+            <span>Batch</span>
+            <span>2026 – 2029</span>
+          </div>
+          <div>
+            <span>Mentor / Advisor</span>
+            <span>Prof. R. Shah · <a href="mailto:r.shah@charusat.edu.in">r.shah@charusat.edu.in</a></span>
+          </div>
+          <div>
+            <span>Address</span>
+            <span>A/302, Mangalam Heights, Satellite Road, Ahmedabad — 380015, Gujarat</span>
+          </div>
+          <div>
+            <span>Parent / Guardian</span>
+            <span>ChimaBhai Visavadiya · <a href="tel:+919898001234">+91 98980 01234</a></span>
+          </div>
+          <div>
+            <span>Blood Group</span>
+            <span>O+</span>
+          </div>
+          <div>
+            <span>CGPA (Up to Sem 2)</span>
+            <span>8.7 / 10.0</span>
+          </div>
         </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">University Email</span>
-          <span class="info-value"><a href="mailto:d26cs127@charusat.edu.in">d26cs127@charusat.edu.in</a></span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Mobile Number</span>
-          <span class="info-value"><a href="tel:+919876543210">+91 98765 43210</a></span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Date of Birth</span>
-          <span class="info-value">12 May 2006</span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Gender</span>
-          <span class="info-value">Male</span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Program</span>
-          <span class="info-value">B.Tech — Computer Science &amp; Engineering</span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Current Semester</span>
-          <span class="info-value">Semester 3 (Academic Year 2026–27)</span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Division</span>
-          <span class="info-value">Division B · Roll No. d26cs127</span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Batch</span>
-          <span class="info-value">2026 – 2029</span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Mentor / Advisor</span>
-          <span class="info-value">Prof. R. Shah · <a href="mailto:r.shah@charusat.edu.in">r.shah@charusat.edu.in</a></span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Address</span>
-          <span class="info-value">A/302, Mangalam Heights, Satellite Road, Ahmedabad — 380015, Gujarat</span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Parent / Guardian</span>
-          <span class="info-value">ChimaBhai Visavadiya · <a href="tel:+919898001234">+91 98980 01234</a></span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">Blood Group</span>
-          <span class="info-value">O+</span>
-        </div>
-
-        <div class="info-item" role="listitem">
-          <span class="info-label">CGPA (Up to Sem 2)</span>
-          <span class="info-value" style="font-weight:700;color:#22c55e;">8.7 / 10.0</span>
-        </div>
-
       </div>
 
     </section>
 
-    <!-- ──────────── SECTION 2: Edit Profile ──────────────── -->
-    <section id="edit-profile" class="content-section" aria-labelledby="edit-profile-heading">
-      <div class="section-header">
+    <section id="edit-profile" aria-labelledby="edit-profile-heading">
+      <div>
         <h2 id="edit-profile-heading">Edit Profile</h2>
         <p>Update your contact details, address, and personal information.</p>
       </div>
 
-      <div class="form-wrapper">
+      <div>
         <form action="profile.html" method="get" aria-label="Edit profile form" novalidate>
-          <div class="form-grid">
+          <div>
 
-            <div class="form-group">
-              <label for="edit-first-name">First Name <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="edit-first-name">First Name <span aria-hidden="true">*</span></label>
               <input
                 type="text"
                 id="edit-first-name"
@@ -177,8 +157,8 @@
               />
             </div>
 
-            <div class="form-group">
-              <label for="edit-last-name">Last Name <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="edit-last-name">Last Name <span aria-hidden="true">*</span></label>
               <input
                 type="text"
                 id="edit-last-name"
@@ -190,8 +170,8 @@
               />
             </div>
 
-            <div class="form-group">
-              <label for="edit-mobile">Mobile Number <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="edit-mobile">Mobile Number <span aria-hidden="true">*</span></label>
               <input
                 type="tel"
                 id="edit-mobile"
@@ -203,7 +183,7 @@
               />
             </div>
 
-            <div class="form-group">
+            <div>
               <label for="edit-alt-email">Alternate Email</label>
               <input
                 type="email"
@@ -214,7 +194,7 @@
               />
             </div>
 
-            <div class="form-group">
+            <div>
               <label for="edit-blood-group">Blood Group</label>
               <select id="edit-blood-group" name="blood_group">
                 <option value="">Select blood group</option>
@@ -229,8 +209,8 @@
               </select>
             </div>
 
-            <div class="form-group">
-              <label for="edit-parent-contact">Parent / Guardian Mobile <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="edit-parent-contact">Parent / Guardian Mobile <span aria-hidden="true">*</span></label>
               <input
                 type="tel"
                 id="edit-parent-contact"
@@ -242,8 +222,8 @@
               />
             </div>
 
-            <div class="form-group form-full">
-              <label for="edit-address">Permanent Address <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="edit-address">Permanent Address <span aria-hidden="true">*</span></label>
               <textarea
                 id="edit-address"
                 name="address"
@@ -252,7 +232,7 @@
               >A/302, Mangalam Heights, Satellite Road, Ahmedabad — 380015, Gujarat</textarea>
             </div>
 
-            <div class="form-group form-full">
+            <div>
               <label for="edit-bio">Short Bio</label>
               <textarea
                 id="edit-bio"
@@ -261,12 +241,12 @@
                 maxlength="300"
                 aria-describedby="bio-hint"
               ></textarea>
-              <span class="field-hint" id="bio-hint">Max 300 characters. Visible to your class advisor only.</span>
+              <span id="bio-hint">Max 300 characters. Visible to your class advisor only.</span>
             </div>
 
-            <div class="form-full form-actions">
-              <button type="submit" class="btn btn-primary" id="save-profile-btn">Save Changes</button>
-              <button type="reset" class="btn btn-outline" id="reset-profile-btn">Discard Changes</button>
+            <div>
+              <button type="submit">Save Changes</button>
+              <button type="reset">Discard Changes</button>
             </div>
 
           </div>
@@ -274,19 +254,18 @@
       </div>
     </section>
 
-    <!-- ──────────── SECTION 3: Change Password ───────────── -->
-    <section id="change-password" class="content-section" aria-labelledby="change-pwd-heading">
-      <div class="section-header">
+    <section id="change-password" aria-labelledby="change-pwd-heading">
+      <div>
         <h2 id="change-pwd-heading">Change Password</h2>
         <p>Update your account password. Choose a strong, unique password.</p>
       </div>
 
-      <div class="form-wrapper" style="max-width:480px;">
+      <div>
         <form action="profile.html" method="get" aria-label="Change password form" novalidate>
-          <div class="form-grid" style="grid-template-columns:1fr;">
+          <div>
 
-            <div class="form-group">
-              <label for="current-password">Current Password <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="current-password">Current Password <span aria-hidden="true">*</span></label>
               <input
                 type="password"
                 id="current-password"
@@ -298,8 +277,8 @@
               />
             </div>
 
-            <div class="form-group">
-              <label for="new-password">New Password <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="new-password">New Password <span aria-hidden="true">*</span></label>
               <input
                 type="password"
                 id="new-password"
@@ -311,11 +290,11 @@
                 autocomplete="new-password"
                 aria-describedby="new-pwd-hint"
               />
-              <span class="field-hint" id="new-pwd-hint">Must be at least 8 characters, including a number and a special character.</span>
+              <span id="new-pwd-hint">Must be at least 8 characters, including a number and a special character.</span>
             </div>
 
-            <div class="form-group">
-              <label for="confirm-new-password">Confirm New Password <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="confirm-new-password">Confirm New Password <span aria-hidden="true">*</span></label>
               <input
                 type="password"
                 id="confirm-new-password"
@@ -328,16 +307,16 @@
               />
             </div>
 
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary" id="change-password-btn">Update Password</button>
+            <div>
+              <button type="submit">Update Password</button>
             </div>
 
           </div>
         </form>
 
-        <div class="callout callout-warning" style="margin-top:2rem;" role="note">
-          <span class="callout-icon" aria-hidden="true">🔒</span>
-          <div style="font-size:0.82rem;">
+        <div role="note">
+          <span aria-hidden="true">🔒</span>
+          <div>
             <strong>Security tip:</strong> After changing your password, you will be logged out from all other devices.
             Never share your password with anyone.
           </div>
@@ -348,17 +327,16 @@
 
   </main>
 
-  <!-- ── Footer ───────────────────────────────────────────── -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="site-logo" aria-label="StudentHub home">
-          <div class="logo-icon" aria-hidden="true">S</div>
-          <span class="logo-text">Student<span>Hub</span></span>
+  <footer role="contentinfo">
+    <div>
+      <div>
+        <a href="index.html" aria-label="StudentHub home">
+          <div aria-hidden="true">S</div>
+          <span>Student<span>Hub</span></span>
         </a>
         <p>Your all-in-one academic management platform — built for modern students.</p>
       </div>
-      <div class="footer-links">
+      <div>
         <h3>Modules</h3>
         <ul>
           <li><a href="attendance.html">Attendance</a></li>
@@ -369,9 +347,9 @@
           <li><a href="profile.html">Profile</a></li>
         </ul>
       </div>
-      <div class="footer-links">
+      <div>
         <h3>Contact</h3>
-        <address class="footer-contact" style="font-style:normal;">
+        <address>
           <span>CHARUSAT University</span>
           <span>Changa, Anand, Gujarat — 388421</span>
           <a href="mailto:support@studenthub.edu">support@studenthub.edu</a>
@@ -379,7 +357,7 @@
         </address>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div>
       <p>© 2026 StudentHub. All rights reserved.</p>
       <p>Designed for CHARUSAT University — WDF Semester 3 Project</p>
     </div>

@@ -5,32 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="View your weekly and daily class timetable on StudentHub, including subject details, room numbers, and faculty information." />
   <title>Time Table — StudentHub</title>
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a href="#main-content">Skip to main content</a>
 
-  <!-- ── Site Header ──────────────────────────────────────── -->
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <a href="index.html" class="site-logo" aria-label="StudentHub home">
-        <div class="logo-icon" aria-hidden="true">S</div>
-        <span class="logo-text">Student<span>Hub</span></span>
+  <header role="banner">
+    <div>
+      <a href="index.html" aria-label="StudentHub home">
+        <div aria-hidden="true">S</div>
+        <span>Student<span>Hub</span></span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
+      <nav aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="register.html">Register</a>
         <a href="login.html">Login</a>
-        <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        <a href="dashboard.html">Dashboard</a>
       </nav>
     </div>
   </header>
 
-  <!-- ── Breadcrumb ────────────────────────────────────────── -->
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <div class="breadcrumb-inner">
+  <nav aria-label="Breadcrumb">
+    <div>
       <ol>
         <li><a href="index.html">Home</a></li>
         <li><a href="dashboard.html">Dashboard</a></li>
@@ -39,163 +36,158 @@
     </div>
   </nav>
 
-  <!-- ── In-page Sub-nav ───────────────────────────────────── -->
-  <nav class="page-subnav" aria-label="Timetable sections">
-    <div class="page-subnav-inner">
-      <a href="#weekly-schedule">Weekly Schedule</a>
-      <a href="#daily-schedule">Daily Schedule</a>
-      <a href="#class-details">Class Details</a>
-    </div>
+  <nav aria-label="Timetable sections">
+    <a href="#weekly-schedule">Weekly Schedule</a>
+    <a href="#daily-schedule">Daily Schedule</a>
+    <a href="#class-details">Class Details</a>
   </nav>
 
-  <!-- ── Main Content ─────────────────────────────────────── -->
   <main id="main-content">
 
-    <div class="page-hero">
-      <h1>🗓️ Time Table</h1>
-      <p>Your complete class schedule for Semester 3, Academic Year 2026–27.</p>
-    </div>
+    <section>
+      <div>
+        <h1>🗓️ Time Table</h1>
+        <p>Your complete class schedule for Semester 3, Academic Year 2026–27.</p>
+      </div>
+    </section>
 
-    <!-- ──────────── SECTION 1: Weekly Schedule ───────────── -->
-    <section id="weekly-schedule" class="content-section" aria-labelledby="weekly-heading">
-      <div class="section-header">
+    <section id="weekly-schedule" aria-labelledby="weekly-heading">
+      <div>
         <h2 id="weekly-heading">Weekly Schedule</h2>
         <p>B.Tech Computer Science — Division A — Semester 3</p>
       </div>
 
-      <div class="week-grid">
-        <div class="week-day">
-          <div class="week-day-header">Monday</div>
-          <div class="week-day-body">
-            <div class="class-chip"><strong>09:00</strong><span>CS301 — DSA · Room 201</span></div>
-            <div class="class-chip"><strong>10:00</strong><span>CS311 — WDF Lab · Lab 3</span></div>
-            <div class="class-chip"><strong>12:00</strong><span>Break</span></div>
-            <div class="class-chip"><strong>01:00</strong><span>CS321 — CN · Room 305</span></div>
-            <div class="class-chip"><strong>02:00</strong><span>CS331 — OS · Room 201</span></div>
+      <div>
+        <div>
+          <div>Monday</div>
+          <div>
+            <div><strong>09:00</strong><span>CS301 — DSA · Room 201</span></div>
+            <div><strong>10:00</strong><span>CS311 — WDF Lab · Lab 3</span></div>
+            <div><strong>12:00</strong><span>Break</span></div>
+            <div><strong>01:00</strong><span>CS321 — CN · Room 305</span></div>
+            <div><strong>02:00</strong><span>CS331 — OS · Room 201</span></div>
           </div>
         </div>
-        <div class="week-day">
-          <div class="week-day-header">Tuesday</div>
-          <div class="week-day-body">
-            <div class="class-chip"><strong>09:00</strong><span>MA301 — Maths · Room 102</span></div>
-            <div class="class-chip"><strong>10:00</strong><span>CS341 — DBMS · Room 204</span></div>
-            <div class="class-chip"><strong>11:00</strong><span>CS301 — DSA · Room 201</span></div>
-            <div class="class-chip"><strong>01:00</strong><span>CS331 — OS Lab · Lab 2</span></div>
+        <div>
+          <div>Tuesday</div>
+          <div>
+            <div><strong>09:00</strong><span>MA301 — Maths · Room 102</span></div>
+            <div><strong>10:00</strong><span>CS341 — DBMS · Room 204</span></div>
+            <div><strong>11:00</strong><span>CS301 — DSA · Room 201</span></div>
+            <div><strong>01:00</strong><span>CS331 — OS Lab · Lab 2</span></div>
           </div>
         </div>
-        <div class="week-day">
-          <div class="week-day-header">Wednesday</div>
-          <div class="week-day-body">
-            <div class="class-chip"><strong>09:00</strong><span>CS321 — CN · Room 305</span></div>
-            <div class="class-chip"><strong>10:00</strong><span>CS311 — WDF · Room 203</span></div>
-            <div class="class-chip"><strong>11:00</strong><span>MA301 — Maths · Room 102</span></div>
-            <div class="class-chip"><strong>01:00</strong><span>CS341 — DBMS Lab · Lab 1</span></div>
+        <div>
+          <div>Wednesday</div>
+          <div>
+            <div><strong>09:00</strong><span>CS321 — CN · Room 305</span></div>
+            <div><strong>10:00</strong><span>CS311 — WDF · Room 203</span></div>
+            <div><strong>11:00</strong><span>MA301 — Maths · Room 102</span></div>
+            <div><strong>01:00</strong><span>CS341 — DBMS Lab · Lab 1</span></div>
           </div>
         </div>
-        <div class="week-day">
-          <div class="week-day-header">Thursday</div>
-          <div class="week-day-body">
-            <div class="class-chip"><strong>09:00</strong><span>CS331 — OS · Room 201</span></div>
-            <div class="class-chip"><strong>10:00</strong><span>CS301 — DSA Lab · Lab 2</span></div>
-            <div class="class-chip"><strong>12:00</strong><span>Break</span></div>
-            <div class="class-chip"><strong>01:00</strong><span>CS341 — DBMS · Room 204</span></div>
+        <div>
+          <div>Thursday</div>
+          <div>
+            <div><strong>09:00</strong><span>CS331 — OS · Room 201</span></div>
+            <div><strong>10:00</strong><span>CS301 — DSA Lab · Lab 2</span></div>
+            <div><strong>12:00</strong><span>Break</span></div>
+            <div><strong>01:00</strong><span>CS341 — DBMS · Room 204</span></div>
           </div>
         </div>
-        <div class="week-day">
-          <div class="week-day-header">Friday</div>
-          <div class="week-day-body">
-            <div class="class-chip"><strong>09:00</strong><span>MA301 — Maths · Room 102</span></div>
-            <div class="class-chip"><strong>10:00</strong><span>CS321 — CN Lab · Lab 4</span></div>
-            <div class="class-chip"><strong>12:00</strong><span>Break</span></div>
-            <div class="class-chip"><strong>01:00</strong><span>CS311 — WDF · Room 203</span></div>
+        <div>
+          <div>Friday</div>
+          <div>
+            <div><strong>09:00</strong><span>MA301 — Maths · Room 102</span></div>
+            <div><strong>10:00</strong><span>CS321 — CN Lab · Lab 4</span></div>
+            <div><strong>12:00</strong><span>Break</span></div>
+            <div><strong>01:00</strong><span>CS311 — WDF · Room 203</span></div>
           </div>
         </div>
       </div>
 
-      <div class="callout callout-info" style="margin-top:1.5rem;" role="note">
-        <span class="callout-icon" aria-hidden="true">ℹ️</span>
-        <div style="font-size:0.875rem;">
+      <div role="note">
+        <span aria-hidden="true">ℹ️</span>
+        <div>
           Lab sessions are 2 hours long. Regular lectures are 1 hour. Saturday is optional and has make-up lectures only when notified.
         </div>
       </div>
     </section>
 
-    <!-- ──────────── SECTION 2: Daily Schedule ────────────── -->
-    <section id="daily-schedule" class="content-section" aria-labelledby="daily-heading">
-      <div class="section-header">
+    <section id="daily-schedule" aria-labelledby="daily-heading">
+      <div>
         <h2 id="daily-heading">Daily Schedule</h2>
         <p>Detailed view of today — Monday, 5 August 2026.</p>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="timeline-time">09:00 – 10:00</span>
-          <div class="timeline-connector" aria-hidden="true">
-            <div class="timeline-dot" style="background:#3b54b0;"></div>
-            <div class="timeline-line"></div>
+      <div>
+        <div>
+          <span>09:00 – 10:00</span>
+          <div aria-hidden="true">
+            <div></div>
+            <div></div>
           </div>
-          <div class="timeline-content">
-            <div class="timeline-subject">Data Structures &amp; Algorithms <span class="badge badge-info">CS301</span></div>
-            <div class="timeline-detail">Room 201, Main Block · Prof. D. Patel · Lecture</div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <span class="timeline-time">10:00 – 12:00</span>
-          <div class="timeline-connector" aria-hidden="true">
-            <div class="timeline-dot" style="background:#22c55e;"></div>
-            <div class="timeline-line"></div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-subject">Web Development Fundamentals — Lab <span class="badge badge-success">CS311</span></div>
-            <div class="timeline-detail">Computer Lab 3, Tech Block · Prof. R. Shah · Practical (2 hrs)</div>
+          <div>
+            <div>Data Structures &amp; Algorithms <span>CS301</span></div>
+            <div>Room 201, Main Block · Prof. D. Patel · Lecture</div>
           </div>
         </div>
 
-        <div class="timeline-item">
-          <span class="timeline-time">12:00 – 01:00</span>
-          <div class="timeline-connector" aria-hidden="true">
-            <div class="timeline-dot" style="background:#5a6282;"></div>
-            <div class="timeline-line"></div>
+        <div>
+          <span>10:00 – 12:00</span>
+          <div aria-hidden="true">
+            <div></div>
+            <div></div>
           </div>
-          <div class="timeline-content" style="background:#f0f4ff;">
-            <div class="timeline-subject" style="color:#5a6282;">Lunch Break</div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <span class="timeline-time">01:00 – 02:00</span>
-          <div class="timeline-connector" aria-hidden="true">
-            <div class="timeline-dot" style="background:#f59e0b;"></div>
-            <div class="timeline-line"></div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-subject">Computer Networks <span class="badge badge-warning">CS321</span></div>
-            <div class="timeline-detail">Room 305, Tech Block · Prof. A. Joshi · Lecture</div>
+          <div>
+            <div>Web Development Fundamentals — Lab <span>CS311</span></div>
+            <div>Computer Lab 3, Tech Block · Prof. R. Shah · Practical (2 hrs)</div>
           </div>
         </div>
 
-        <div class="timeline-item">
-          <span class="timeline-time">02:00 – 03:00</span>
-          <div class="timeline-connector" aria-hidden="true">
-            <div class="timeline-dot" style="background:#ef4444;"></div>
+        <div>
+          <span>12:00 – 01:00</span>
+          <div aria-hidden="true">
+            <div></div>
+            <div></div>
           </div>
-          <div class="timeline-content">
-            <div class="timeline-subject">Operating Systems <span class="badge badge-danger">CS331</span></div>
-            <div class="timeline-detail">Room 201, Main Block · Prof. N. Mehta · Lecture</div>
+          <div>
+            <div>Lunch Break</div>
+          </div>
+        </div>
+
+        <div>
+          <span>01:00 – 02:00</span>
+          <div aria-hidden="true">
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>Computer Networks <span>CS321</span></div>
+            <div>Room 305, Tech Block · Prof. A. Joshi · Lecture</div>
+          </div>
+        </div>
+
+        <div>
+          <span>02:00 – 03:00</span>
+          <div aria-hidden="true">
+            <div></div>
+          </div>
+          <div>
+            <div>Operating Systems <span>CS331</span></div>
+            <div>Room 201, Main Block · Prof. N. Mehta · Lecture</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ──────────── SECTION 3: Class Details ─────────────── -->
-    <section id="class-details" class="content-section" aria-labelledby="class-detail-heading">
-      <div class="section-header">
+    <section id="class-details" aria-labelledby="class-detail-heading">
+      <div>
         <h2 id="class-detail-heading">Class Details</h2>
         <p>Complete information about each enrolled subject.</p>
       </div>
 
-      <div class="table-wrapper">
+      <div>
         <table aria-label="Class details for enrolled subjects">
           <thead>
             <tr>
@@ -216,7 +208,7 @@
               <td>d.patel@charusat.edu.in</td>
               <td>Room 201</td>
               <td>4</td>
-              <td><span class="badge badge-info">Theory + Lab</span></td>
+              <td>Theory + Lab</td>
             </tr>
             <tr>
               <td>CS311</td>
@@ -225,7 +217,7 @@
               <td>r.shah@charusat.edu.in</td>
               <td>Lab 3</td>
               <td>4</td>
-              <td><span class="badge badge-success">Practical</span></td>
+              <td>Practical</td>
             </tr>
             <tr>
               <td>CS321</td>
@@ -234,7 +226,7 @@
               <td>a.joshi@charusat.edu.in</td>
               <td>Room 305</td>
               <td>3</td>
-              <td><span class="badge badge-info">Theory + Lab</span></td>
+              <td>Theory + Lab</td>
             </tr>
             <tr>
               <td>CS331</td>
@@ -243,7 +235,7 @@
               <td>n.mehta@charusat.edu.in</td>
               <td>Room 201</td>
               <td>4</td>
-              <td><span class="badge badge-info">Theory + Lab</span></td>
+              <td>Theory + Lab</td>
             </tr>
             <tr>
               <td>MA301</td>
@@ -252,7 +244,7 @@
               <td>s.chauhan@charusat.edu.in</td>
               <td>Room 102</td>
               <td>3</td>
-              <td><span class="badge badge-muted">Theory</span></td>
+              <td>Theory</td>
             </tr>
             <tr>
               <td>CS341</td>
@@ -261,7 +253,7 @@
               <td>v.trivedi@charusat.edu.in</td>
               <td>Lab 1</td>
               <td>4</td>
-              <td><span class="badge badge-info">Theory + Lab</span></td>
+              <td>Theory + Lab</td>
             </tr>
           </tbody>
         </table>
@@ -270,17 +262,16 @@
 
   </main>
 
-  <!-- ── Footer ───────────────────────────────────────────── -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="site-logo" aria-label="StudentHub home">
-          <div class="logo-icon" aria-hidden="true">S</div>
-          <span class="logo-text">Student<span>Hub</span></span>
+  <footer role="contentinfo">
+    <div>
+      <div>
+        <a href="index.html" aria-label="StudentHub home">
+          <div aria-hidden="true">S</div>
+          <span>Student<span>Hub</span></span>
         </a>
         <p>Your all-in-one academic management platform — built for modern students.</p>
       </div>
-      <div class="footer-links">
+      <div>
         <h3>Modules</h3>
         <ul>
           <li><a href="attendance.html">Attendance</a></li>
@@ -291,9 +282,9 @@
           <li><a href="profile.html">Profile</a></li>
         </ul>
       </div>
-      <div class="footer-links">
+      <div>
         <h3>Contact</h3>
-        <address class="footer-contact" style="font-style:normal;">
+        <address>
           <span>CHARUSAT University</span>
           <span>Changa, Anand, Gujarat — 388421</span>
           <a href="mailto:support@studenthub.edu">support@studenthub.edu</a>
@@ -301,7 +292,7 @@
         </address>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div>
       <p>© 2026 StudentHub. All rights reserved.</p>
       <p>Designed for CHARUSAT University — WDF Semester 3 Project</p>
     </div>

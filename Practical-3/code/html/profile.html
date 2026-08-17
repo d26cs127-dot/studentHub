@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manage your StudentHub profile — view personal information, edit your details, and update your account password securely." />
+  <title>Profile — StudentHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="bg-[#0f1729] shadow-lg sticky top-0 z-[100]" role="banner">
+    <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-2 md:gap-0 py-4 md:py-0 md:h-[4.5rem]">
+      <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+        <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+        <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+      </a>
+      <nav class="flex flex-wrap gap-0.5" aria-label="Primary navigation">
+        <a href="index.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Home</a>
+        <a href="about.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">About</a>
+        <a href="register.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Register</a>
+        <a href="login.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Login</a>
+        <a href="dashboard.html" class="bg-[#fbbf24] text-[#0f1729] text-sm font-bold px-4 py-1.5 rounded-full border border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:text-[#0f1729]">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="bg-white border-b border-[#d1d9f0]" aria-label="Breadcrumb">
+    <div class="max-w-[1200px] mx-auto px-6 py-2">
+      <ol class="flex flex-wrap items-center gap-1 text-xs text-[#5a6282]">
+        <li><a href="index.html" class="text-[#3b54b0] font-medium hover:underline">Home</a></li>
+        <li class="before:content-['›'] before:mx-1 before:text-[#8da2e0]"><a href="dashboard.html" class="text-[#3b54b0] font-medium hover:underline">Dashboard</a></li>
+        <li class="before:content-['›'] before:mx-1 before:text-[#8da2e0]"><span aria-current="page" class="text-[#1a1f36] font-semibold">Profile</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <nav class="bg-white border-b border-[#d1d9f0] px-6 py-3 flex flex-wrap gap-3 text-sm" aria-label="Profile sections">
+    <a href="#personal-information" class="text-[#3b54b0] font-medium hover:underline">Personal Information</a>
+    <a href="#edit-profile" class="text-[#3b54b0] font-medium hover:underline">Edit Profile</a>
+    <a href="#change-password" class="text-[#3b54b0] font-medium hover:underline">Change Password</a>
+  </nav>
+
+  <main id="main-content" class="flex-1 max-w-[1200px] w-full mx-auto px-6 py-8 md:py-12">
+
+    <section class="relative bg-gradient-to-br from-[#172040] to-[#2b3f80] rounded-2xl px-8 py-8 md:py-10 mb-8 text-white overflow-hidden page-hero">
+      <div class="relative z-10">
+        <h1 class="text-white text-2xl md:text-4xl font-bold">👤 My Profile</h1>
+        <p class="text-[#c0ccf0] text-base md:text-lg">Manage your personal information and account settings.</p>
+      </div>
+    </section>
+
+    <section id="personal-information" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="personal-info-heading">
+
+      <div class="flex flex-wrap items-center gap-4 mb-6">
+        <div class="w-20 h-20 rounded-full bg-[#eef3ff] flex items-center justify-center text-2xl font-bold text-[#3b54b0] shrink-0" role="img" aria-label="Student avatar with initials A M">AM</div>
+        <div>
+          <h2 id="personal-info-heading" class="text-xl font-bold text-[#1a1f36]">Niraj Visavadiya</h2>
+          <p class="text-sm text-[#5a6282]">d26cs127 · B.Tech Computer Science · Semester 3</p>
+          <div class="flex flex-wrap gap-1 mt-1">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#d1fae5] text-[#065f46]">Active Student</span>
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#dbeafe] text-[#1e40af]">Division B</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-0 divide-y divide-[#eef3ff] md:divide-y-0 md:divide-x md:divide-[#eef3ff]">
+        <div class="space-y-0 divide-y divide-[#eef3ff]">
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Full Name</span>
+            <span class="text-sm text-[#1a1f36]">Niraj ChimanBhai Visavadiya</span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Enrollment No.</span>
+            <span class="text-sm text-[#1a1f36]">d26cs127</span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">University Email</span>
+            <span class="text-sm text-[#1a1f36]"><a href="mailto:d26cs127@charusat.edu.in" class="text-[#3b54b0] hover:underline">d26cs127@charusat.edu.in</a></span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Mobile Number</span>
+            <span class="text-sm text-[#1a1f36]"><a href="tel:+919876543210" class="text-[#3b54b0] hover:underline">+91 98765 43210</a></span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Date of Birth</span>
+            <span class="text-sm text-[#1a1f36]">12 May 2006</span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Gender</span>
+            <span class="text-sm text-[#1a1f36]">Male</span>
+          </div>
+        </div>
+        <div class="space-y-0 divide-y divide-[#eef3ff]">
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Program</span>
+            <span class="text-sm text-[#1a1f36]">B.Tech — Computer Science &amp; Engineering</span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Current Semester</span>
+            <span class="text-sm text-[#1a1f36]">Semester 3 (Academic Year 2026–27)</span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Division</span>
+            <span class="text-sm text-[#1a1f36]">Division B · Roll No. d26cs127</span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Batch</span>
+            <span class="text-sm text-[#1a1f36]">2026 – 2029</span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Mentor / Advisor</span>
+            <span class="text-sm text-[#1a1f36]">Prof. R. Shah · <a href="mailto:r.shah@charusat.edu.in" class="text-[#3b54b0] hover:underline">r.shah@charusat.edu.in</a></span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Address</span>
+            <span class="text-sm text-[#1a1f36]">A/302, Mangalam Heights, Satellite Road, Ahmedabad — 380015, Gujarat</span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Parent / Guardian</span>
+            <span class="text-sm text-[#1a1f36]">ChimaBhai Visavadiya · <a href="tel:+919898001234" class="text-[#3b54b0] hover:underline">+91 98980 01234</a></span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">Blood Group</span>
+            <span class="text-sm text-[#1a1f36]">O+</span>
+          </div>
+          <div class="flex flex-col py-3 px-4">
+            <span class="text-sm font-semibold text-[#5a6282]">CGPA (Up to Sem 2)</span>
+            <span class="text-sm font-bold text-[#22c55e]">8.7 / 10.0</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="edit-profile" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="edit-profile-heading">
+      <div class="section-header mb-6">
+        <h2 id="edit-profile-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Edit Profile</h2>
+        <p class="text-[#5a6282] text-sm">Update your contact details, address, and personal information.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm">
+        <form action="profile.html" method="get" aria-label="Edit profile form" novalidate>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+            <div class="flex flex-col gap-1">
+              <label for="edit-first-name" class="font-semibold text-sm text-[#1a1f36]">First Name <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="edit-first-name"
+                name="first_name"
+                value="Niraj"
+                autocomplete="given-name"
+                required
+                aria-required="true"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="edit-last-name" class="font-semibold text-sm text-[#1a1f36]">Last Name <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="edit-last-name"
+                name="last_name"
+                value="Visavadiya"
+                autocomplete="family-name"
+                required
+                aria-required="true"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="edit-mobile" class="font-semibold text-sm text-[#1a1f36]">Mobile Number <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="tel"
+                id="edit-mobile"
+                name="mobile"
+                value="+91 98765 43210"
+                autocomplete="tel"
+                required
+                aria-required="true"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="edit-alt-email" class="font-semibold text-sm text-[#1a1f36]">Alternate Email</label>
+              <input
+                type="email"
+                id="edit-alt-email"
+                name="alt_email"
+                placeholder="personal@gmail.com"
+                autocomplete="email"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="edit-blood-group" class="font-semibold text-sm text-[#1a1f36]">Blood Group</label>
+              <select id="edit-blood-group" name="blood_group" class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all">
+                <option value="">Select blood group</option>
+                <option value="a_pos" selected>A+</option>
+                <option value="a_neg">A-</option>
+                <option value="b_pos">B+</option>
+                <option value="b_neg">B-</option>
+                <option value="o_pos">O+</option>
+                <option value="o_neg">O-</option>
+                <option value="ab_pos">AB+</option>
+                <option value="ab_neg">AB-</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="edit-parent-contact" class="font-semibold text-sm text-[#1a1f36]">Parent / Guardian Mobile <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="tel"
+                id="edit-parent-contact"
+                name="parent_contact"
+                value="+91 98980 01234"
+                autocomplete="tel"
+                required
+                aria-required="true"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+            </div>
+
+            <div class="col-span-1 md:col-span-2 flex flex-col gap-1">
+              <label for="edit-address" class="font-semibold text-sm text-[#1a1f36]">Permanent Address <span class="text-red-500" aria-hidden="true">*</span></label>
+              <textarea
+                id="edit-address"
+                name="address"
+                required
+                aria-required="true"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all min-h-[80px]"
+              >A/302, Mangalam Heights, Satellite Road, Ahmedabad — 380015, Gujarat</textarea>
+            </div>
+
+            <div class="col-span-1 md:col-span-2 flex flex-col gap-1">
+              <label for="edit-bio" class="font-semibold text-sm text-[#1a1f36]">Short Bio</label>
+              <textarea
+                id="edit-bio"
+                name="bio"
+                placeholder="A short note about yourself (optional)..."
+                maxlength="300"
+                aria-describedby="bio-hint"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all min-h-[80px]"
+              ></textarea>
+              <span class="field-hint text-xs text-[#5a6282] mt-1" id="bio-hint">Max 300 characters. Visible to your class advisor only.</span>
+            </div>
+
+            <div class="col-span-1 md:col-span-2 flex flex-wrap gap-3 mt-2">
+              <button type="submit" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm bg-[#fbbf24] text-[#0f1729] border-2 border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(251,191,36,0.4)] transition-all duration-250">Save Changes</button>
+              <button type="reset" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm bg-transparent text-[#3b54b0] border-2 border-[#3b54b0] hover:bg-[#eef3ff] hover:-translate-y-0.5 transition-all duration-250">Discard Changes</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="change-password" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="change-pwd-heading">
+      <div class="section-header mb-6">
+        <h2 id="change-pwd-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Change Password</h2>
+        <p class="text-[#5a6282] text-sm">Update your account password. Choose a strong, unique password.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm max-w-[480px]">
+        <form action="profile.html" method="get" aria-label="Change password form" novalidate>
+          <div class="flex flex-col gap-5">
+
+            <div class="flex flex-col gap-1">
+              <label for="current-password" class="font-semibold text-sm text-[#1a1f36]">Current Password <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="password"
+                id="current-password"
+                name="current_password"
+                placeholder="Enter your current password"
+                required
+                aria-required="true"
+                autocomplete="current-password"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="new-password" class="font-semibold text-sm text-[#1a1f36]">New Password <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="password"
+                id="new-password"
+                name="new_password"
+                placeholder="Min. 8 characters"
+                minlength="8"
+                required
+                aria-required="true"
+                autocomplete="new-password"
+                aria-describedby="new-pwd-hint"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+              <span class="field-hint text-xs text-[#5a6282] mt-1" id="new-pwd-hint">Must be at least 8 characters, including a number and a special character.</span>
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="confirm-new-password" class="font-semibold text-sm text-[#1a1f36]">Confirm New Password <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input
+                type="password"
+                id="confirm-new-password"
+                name="confirm_new_password"
+                placeholder="Re-enter new password"
+                minlength="8"
+                required
+                aria-required="true"
+                autocomplete="new-password"
+                class="w-full px-4 py-3 border border-[#d1d9f0] rounded-xl font-inter text-sm bg-white text-[#1a1f36] focus:outline-none focus:border-[#3b54b0] focus:ring-3 focus:ring-[#3b54b0]/15 transition-all"
+              />
+            </div>
+
+            <div class="mt-1">
+              <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm bg-[#fbbf24] text-[#0f1729] border-2 border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(251,191,36,0.4)] transition-all duration-250">Update Password</button>
+            </div>
+
+          </div>
+        </form>
+
+        <div class="callout callout-warning mt-6" role="note">
+          <span class="callout-icon text-2xl" aria-hidden="true">🔒</span>
+          <div class="text-sm">
+            <strong>Security tip:</strong> After changing your password, you will be logged out from all other devices.
+            Never share your password with anyone.
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="bg-gradient-to-br from-[#0f1729] to-[#172040] text-[#c0ccf0] mt-auto" role="contentinfo">
+    <div class="max-w-[1200px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+          <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+          <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+        </a>
+        <p class="text-[#8da2e0] text-sm mt-2 max-w-[35ch]">Your all-in-one academic management platform — built for modern students.</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Modules</h3>
+        <ul class="flex flex-col gap-2">
+          <li><a href="attendance.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Attendance</a></li>
+          <li><a href="assignments.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Assignments</a></li>
+          <li><a href="timetable.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Time Table</a></li>
+          <li><a href="study-material.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Study Material</a></li>
+          <li><a href="notice-board.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Notice Board</a></li>
+          <li><a href="profile.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Profile</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Contact</h3>
+        <address class="not-italic text-[#8da2e0] text-sm flex flex-col gap-2">
+          <span>CHARUSAT University</span>
+          <span>Changa, Anand, Gujarat — 388421</span>
+          <a href="mailto:support@studenthub.edu" class="hover:text-[#fbbf24] transition-colors">support@studenthub.edu</a>
+          <a href="tel:+912697265000" class="hover:text-[#fbbf24] transition-colors">+91 2697 265000</a>
+        </address>
+      </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-6 py-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-[#8da2e0]">
+      <p>© 2026 StudentHub. All rights reserved.</p>
+      <p>Designed for CHARUSAT University — WDF Semester 3 Project</p>
+    </div>
+  </footer>
+
+</body>
+</html>

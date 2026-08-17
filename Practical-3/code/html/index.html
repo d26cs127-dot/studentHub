@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StudentHub — Your all-in-one academic companion. Track attendance, manage assignments, view timetables, access study materials, and stay updated with notices." />
+  <title>StudentHub — Your Academic Companion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="bg-[#0f1729] shadow-lg sticky top-0 z-[100]" role="banner">
+    <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-2 md:gap-0 py-4 md:py-0 md:h-[4.5rem]">
+      <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+        <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+        <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+      </a>
+      <nav class="flex flex-wrap gap-0.5" aria-label="Primary navigation">
+        <a href="index.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25 active:text-white active:bg-white/15 active:border-white/25">Home</a>
+        <a href="about.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">About</a>
+        <a href="register.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Register</a>
+        <a href="login.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Login</a>
+        <a href="dashboard.html" class="bg-[#fbbf24] text-[#0f1729] text-sm font-bold px-4 py-1.5 rounded-full border border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:text-[#0f1729]">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="flex-1 max-w-[1200px] w-full mx-auto px-6 py-8 md:py-12">
+
+    <section class="relative bg-gradient-to-br from-[#172040] via-[#2b3f80] to-[#3b54b0] rounded-2xl px-8 py-12 md:px-12 md:py-16 text-center text-white overflow-hidden mb-12 hero">
+      <div class="relative z-10">
+        <span class="inline-block bg-[#fbbf24]/20 border border-[#fbbf24]/40 text-[#fcd34d] text-xs font-semibold px-4 py-1.5 rounded-full tracking-widest uppercase mb-6">🎓 Academic Management Platform</span>
+        <h1 id="hero-heading" class="text-white text-3xl md:text-5xl font-extrabold leading-tight mb-4">Your Campus Life,<br /><span class="text-[#fbbf24]">All in One Place</span></h1>
+        <p class="text-[#c0ccf0] text-lg max-w-[55ch] mx-auto mb-8">StudentHub brings together attendance tracking, assignment management, timetables, study materials, and live notices — designed for modern students.</p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="register.html" class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full font-semibold text-sm bg-[#fbbf24] text-[#0f1729] border-2 border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(251,191,36,0.4)] transition-all duration-250">Get Started Free</a>
+          <a href="about.html" class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full font-semibold text-sm bg-transparent text-white border-2 border-white/50 hover:bg-white/10 hover:border-white hover:-translate-y-0.5 transition-all duration-250">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="stats-heading">
+      <h2 id="stats-heading" class="sr-only">Platform statistics</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div class="bg-white border border-[#d1d9f0] rounded-2xl p-6 text-center shadow-sm">
+          <span class="block font-outfit text-3xl font-extrabold text-[#2b3f80]">12K+</span>
+          <span class="block text-xs text-[#5a6282] font-medium uppercase tracking-wider mt-1">Active Students</span>
+        </div>
+        <div class="bg-white border border-[#d1d9f0] rounded-2xl p-6 text-center shadow-sm">
+          <span class="block font-outfit text-3xl font-extrabold text-[#2b3f80]">340+</span>
+          <span class="block text-xs text-[#5a6282] font-medium uppercase tracking-wider mt-1">Courses Tracked</span>
+        </div>
+        <div class="bg-white border border-[#d1d9f0] rounded-2xl p-6 text-center shadow-sm">
+          <span class="block font-outfit text-3xl font-extrabold text-[#2b3f80]">98%</span>
+          <span class="block text-xs text-[#5a6282] font-medium uppercase tracking-wider mt-1">Satisfaction Rate</span>
+        </div>
+        <div class="bg-white border border-[#d1d9f0] rounded-2xl p-6 text-center shadow-sm">
+          <span class="block font-outfit text-3xl font-extrabold text-[#2b3f80]">50+</span>
+          <span class="block text-xs text-[#5a6282] font-medium uppercase tracking-wider mt-1">Institutions</span>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="features-heading" class="mb-12">
+      <div class="section-header mb-8">
+        <h2 id="features-heading" class="text-[#1e2d5a] text-2xl md:text-3xl font-bold mb-2 flex items-center gap-2">Everything You Need to Succeed</h2>
+        <p class="text-[#5a6282] text-sm">Six powerful modules to help you stay on top of your academic journey.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="bg-white rounded-2xl border border-[#d1d9f0] shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-250 overflow-hidden">
+          <div class="p-8">
+            <div class="w-14 h-14 rounded-xl bg-[#e8ecfa] flex items-center justify-center text-2xl mb-4" aria-hidden="true">📅</div>
+            <h3 class="font-outfit text-lg font-bold text-[#1a1f36] mb-2">Attendance Tracker</h3>
+            <p class="text-sm text-[#5a6282] leading-relaxed">Monitor subject-wise attendance with percentages and history. Get alerts when you're running low.</p>
+          </div>
+        </article>
+        <article class="bg-white rounded-2xl border border-[#d1d9f0] shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-250 overflow-hidden">
+          <div class="p-8">
+            <div class="w-14 h-14 rounded-xl bg-[#fef9c3] flex items-center justify-center text-2xl mb-4" aria-hidden="true">📝</div>
+            <h3 class="font-outfit text-lg font-bold text-[#1a1f36] mb-2">Assignments</h3>
+            <p class="text-sm text-[#5a6282] leading-relaxed">View due dates, submit work, and track submission statuses all from one streamlined dashboard.</p>
+          </div>
+        </article>
+        <article class="bg-white rounded-2xl border border-[#d1d9f0] shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-250 overflow-hidden">
+          <div class="p-8">
+            <div class="w-14 h-14 rounded-xl bg-[#dcfce7] flex items-center justify-center text-2xl mb-4" aria-hidden="true">🗓️</div>
+            <h3 class="font-outfit text-lg font-bold text-[#1a1f36] mb-2">Timetable</h3>
+            <p class="text-sm text-[#5a6282] leading-relaxed">View your weekly and daily class schedule with room and faculty details at a glance.</p>
+          </div>
+        </article>
+        <article class="bg-white rounded-2xl border border-[#d1d9f0] shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-250 overflow-hidden">
+          <div class="p-8">
+            <div class="w-14 h-14 rounded-xl bg-[#dbeafe] flex items-center justify-center text-2xl mb-4" aria-hidden="true">📚</div>
+            <h3 class="font-outfit text-lg font-bold text-[#1a1f36] mb-2">Study Materials</h3>
+            <p class="text-sm text-[#5a6282] leading-relaxed">Access lecture notes, PDFs, and presentations uploaded by your instructors, all organised by subject.</p>
+          </div>
+        </article>
+        <article class="bg-white rounded-2xl border border-[#d1d9f0] shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-250 overflow-hidden">
+          <div class="p-8">
+            <div class="w-14 h-14 rounded-xl bg-[#fce7f3] flex items-center justify-center text-2xl mb-4" aria-hidden="true">📢</div>
+            <h3 class="font-outfit text-lg font-bold text-[#1a1f36] mb-2">Notice Board</h3>
+            <p class="text-sm text-[#5a6282] leading-relaxed">Stay updated with academic notices, upcoming events, and holiday announcements in real time.</p>
+          </div>
+        </article>
+        <article class="bg-white rounded-2xl border border-[#d1d9f0] shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-250 overflow-hidden">
+          <div class="p-8">
+            <div class="w-14 h-14 rounded-xl bg-[#f3e8ff] flex items-center justify-center text-2xl mb-4" aria-hidden="true">👤</div>
+            <h3 class="font-outfit text-lg font-bold text-[#1a1f36] mb-2">Profile Management</h3>
+            <p class="text-sm text-[#5a6282] leading-relaxed">Manage your personal information, edit profile details, and update your account credentials securely.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-heading" class="mb-12">
+      <div class="section-header mb-8">
+        <h2 id="how-heading" class="text-[#1e2d5a] text-2xl md:text-3xl font-bold mb-2 flex items-center gap-2">Get Started in 3 Simple Steps</h2>
+        <p class="text-[#5a6282] text-sm">Joining StudentHub takes less than two minutes.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl border border-[#d1d9f0] shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-250 overflow-hidden">
+          <div class="p-8">
+            <div class="w-14 h-14 rounded-xl bg-[#e8ecfa] flex items-center justify-center text-2xl font-extrabold text-[#2b3f80] font-outfit mb-4" aria-hidden="true">01</div>
+            <h3 class="font-outfit text-lg font-bold text-[#1a1f36] mb-2">Create Your Account</h3>
+            <p class="text-sm text-[#5a6282] leading-relaxed mb-4">Register with your university email and enrolment number to get instant access.</p>
+            <a href="register.html" class="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-full font-semibold text-sm bg-[#2b3f80] text-white border-2 border-[#2b3f80] hover:bg-[#3b54b0] hover:border-[#3b54b0] hover:-translate-y-0.5 hover:shadow-md transition-all duration-250">Sign Up →</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl border border-[#d1d9f0] shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-250 overflow-hidden">
+          <div class="p-8">
+            <div class="w-14 h-14 rounded-xl bg-[#e8ecfa] flex items-center justify-center text-2xl font-extrabold text-[#2b3f80] font-outfit mb-4" aria-hidden="true">02</div>
+            <h3 class="font-outfit text-lg font-bold text-[#1a1f36] mb-2">Sign In Securely</h3>
+            <p class="text-sm text-[#5a6282] leading-relaxed mb-4">Log in with your credentials. Your dashboard loads instantly with personalised data.</p>
+            <a href="login.html" class="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-full font-semibold text-sm bg-[#2b3f80] text-white border-2 border-[#2b3f80] hover:bg-[#3b54b0] hover:border-[#3b54b0] hover:-translate-y-0.5 hover:shadow-md transition-all duration-250">Sign In →</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl border border-[#d1d9f0] shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-250 overflow-hidden">
+          <div class="p-8">
+            <div class="w-14 h-14 rounded-xl bg-[#e8ecfa] flex items-center justify-center text-2xl font-extrabold text-[#2b3f80] font-outfit mb-4" aria-hidden="true">03</div>
+            <h3 class="font-outfit text-lg font-bold text-[#1a1f36] mb-2">Explore Your Dashboard</h3>
+            <p class="text-sm text-[#5a6282] leading-relaxed mb-4">Navigate your six modules — from attendance to notices — everything synced and organised.</p>
+            <a href="dashboard.html" class="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-full font-semibold text-sm bg-[#2b3f80] text-white border-2 border-[#2b3f80] hover:bg-[#3b54b0] hover:border-[#3b54b0] hover:-translate-y-0.5 hover:shadow-md transition-all duration-250">Dashboard →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative bg-gradient-to-br from-[#172040] via-[#2b3f80] to-[#3b54b0] rounded-2xl px-8 py-12 md:px-12 md:py-16 text-center text-white overflow-hidden hero">
+      <div class="relative z-10">
+        <h2 class="text-white text-2xl md:text-4xl font-bold mb-4">Ready to Take Control of Your Academics?</h2>
+        <p class="text-[#c0ccf0] text-lg max-w-[55ch] mx-auto mb-8">Join thousands of students already using StudentHub to stay organised and on track.</p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="register.html" class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full font-semibold text-sm bg-[#fbbf24] text-[#0f1729] border-2 border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(251,191,36,0.4)] transition-all duration-250">Create Free Account</a>
+          <a href="login.html" class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full font-semibold text-sm bg-transparent text-white border-2 border-white/50 hover:bg-white/10 hover:border-white hover:-translate-y-0.5 transition-all duration-250">Sign In</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gradient-to-br from-[#0f1729] to-[#172040] text-[#c0ccf0] mt-auto" role="contentinfo">
+    <div class="max-w-[1200px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+          <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+          <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+        </a>
+        <p class="text-[#8da2e0] text-sm mt-2 max-w-[35ch]">Your all-in-one academic management platform — built for modern students.</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Navigation</h3>
+        <ul class="flex flex-col gap-2">
+          <li><a href="index.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Home</a></li>
+          <li><a href="about.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">About</a></li>
+          <li><a href="register.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Register</a></li>
+          <li><a href="login.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Login</a></li>
+          <li><a href="dashboard.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Dashboard</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Contact</h3>
+        <address class="not-italic text-[#8da2e0] text-sm flex flex-col gap-2">
+          <span>CHARUSAT University</span>
+          <span>Changa, Anand, Gujarat — 388421</span>
+          <a href="mailto:support@studenthub.edu" class="hover:text-[#fbbf24] transition-colors">support@studenthub.edu</a>
+          <a href="tel:+912697265000" class="hover:text-[#fbbf24] transition-colors">+91 2697 265000</a>
+        </address>
+      </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-6 py-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-[#8da2e0]">
+      <p>© 2026 StudentHub. All rights reserved.</p>
+      <p>Designed for CHARUSAT University — WDF Semester 3 Project</p>
+    </div>
+  </footer>
+
+</body>
+</html>

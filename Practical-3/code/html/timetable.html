@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View your weekly and daily class timetable on StudentHub, including subject details, room numbers, and faculty information." />
+  <title>Time Table — StudentHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="bg-[#0f1729] shadow-lg sticky top-0 z-[100]" role="banner">
+    <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-2 md:gap-0 py-4 md:py-0 md:h-[4.5rem]">
+      <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+        <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+        <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+      </a>
+      <nav class="flex flex-wrap gap-0.5" aria-label="Primary navigation">
+        <a href="index.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Home</a>
+        <a href="about.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">About</a>
+        <a href="register.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Register</a>
+        <a href="login.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Login</a>
+        <a href="dashboard.html" class="bg-[#fbbf24] text-[#0f1729] text-sm font-bold px-4 py-1.5 rounded-full border border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:text-[#0f1729]">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="bg-white border-b border-[#d1d9f0]" aria-label="Breadcrumb">
+    <div class="max-w-[1200px] mx-auto px-6 py-2">
+      <ol class="flex flex-wrap items-center gap-1 text-xs text-[#5a6282]">
+        <li><a href="index.html" class="text-[#3b54b0] font-medium hover:underline">Home</a></li>
+        <li class="before:content-['›'] before:mx-1 before:text-[#8da2e0]"><a href="dashboard.html" class="text-[#3b54b0] font-medium hover:underline">Dashboard</a></li>
+        <li class="before:content-['›'] before:mx-1 before:text-[#8da2e0]"><span aria-current="page" class="text-[#1a1f36] font-semibold">Time Table</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <nav class="bg-white border-b border-[#d1d9f0] px-6 py-3 flex flex-wrap gap-3 text-sm" aria-label="Timetable sections">
+    <a href="#weekly-schedule" class="text-[#3b54b0] font-medium hover:underline">Weekly Schedule</a>
+    <a href="#daily-schedule" class="text-[#3b54b0] font-medium hover:underline">Daily Schedule</a>
+    <a href="#class-details" class="text-[#3b54b0] font-medium hover:underline">Class Details</a>
+  </nav>
+
+  <main id="main-content" class="flex-1 max-w-[1200px] w-full mx-auto px-6 py-8 md:py-12">
+
+    <section class="relative bg-gradient-to-br from-[#172040] to-[#2b3f80] rounded-2xl px-8 py-8 md:py-10 mb-8 text-white overflow-hidden page-hero">
+      <div class="relative z-10">
+        <h1 class="text-white text-2xl md:text-4xl font-bold">🗓️ Time Table</h1>
+        <p class="text-[#c0ccf0] text-base md:text-lg">Your complete class schedule for Semester 3, Academic Year 2026–27.</p>
+      </div>
+    </section>
+
+    <section id="weekly-schedule" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="weekly-heading">
+      <div class="section-header mb-6">
+        <h2 id="weekly-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Weekly Schedule</h2>
+        <p class="text-[#5a6282] text-sm">B.Tech Computer Science — Division A — Semester 3</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="border border-[#d1d9f0] rounded-2xl overflow-hidden shadow-sm">
+          <div class="bg-[#f1f5f9] px-4 py-3 font-semibold text-sm text-[#1a1f36] border-b border-[#d1d9f0]">Monday</div>
+          <div class="p-3 space-y-2">
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">09:00</strong><span class="text-[#1a1f36]">CS301 — DSA · Room 201</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">10:00</strong><span class="text-[#1a1f36]">CS311 — WDF Lab · Lab 3</span></div>
+            <div class="text-xs p-2 bg-[#f8f9fa] rounded-lg text-[#5a6282]"><strong class="block text-[#5a6282]">12:00</strong><span>Break</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">01:00</strong><span class="text-[#1a1f36]">CS321 — CN · Room 305</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">02:00</strong><span class="text-[#1a1f36]">CS331 — OS · Room 201</span></div>
+          </div>
+        </div>
+        <div class="border border-[#d1d9f0] rounded-2xl overflow-hidden shadow-sm">
+          <div class="bg-[#f1f5f9] px-4 py-3 font-semibold text-sm text-[#1a1f36] border-b border-[#d1d9f0]">Tuesday</div>
+          <div class="p-3 space-y-2">
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">09:00</strong><span class="text-[#1a1f36]">MA301 — Maths · Room 102</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">10:00</strong><span class="text-[#1a1f36]">CS341 — DBMS · Room 204</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">11:00</strong><span class="text-[#1a1f36]">CS301 — DSA · Room 201</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">01:00</strong><span class="text-[#1a1f36]">CS331 — OS Lab · Lab 2</span></div>
+          </div>
+        </div>
+        <div class="border border-[#d1d9f0] rounded-2xl overflow-hidden shadow-sm">
+          <div class="bg-[#f1f5f9] px-4 py-3 font-semibold text-sm text-[#1a1f36] border-b border-[#d1d9f0]">Wednesday</div>
+          <div class="p-3 space-y-2">
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">09:00</strong><span class="text-[#1a1f36]">CS321 — CN · Room 305</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">10:00</strong><span class="text-[#1a1f36]">CS311 — WDF · Room 203</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">11:00</strong><span class="text-[#1a1f36]">MA301 — Maths · Room 102</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">01:00</strong><span class="text-[#1a1f36]">CS341 — DBMS Lab · Lab 1</span></div>
+          </div>
+        </div>
+        <div class="border border-[#d1d9f0] rounded-2xl overflow-hidden shadow-sm">
+          <div class="bg-[#f1f5f9] px-4 py-3 font-semibold text-sm text-[#1a1f36] border-b border-[#d1d9f0]">Thursday</div>
+          <div class="p-3 space-y-2">
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">09:00</strong><span class="text-[#1a1f36]">CS331 — OS · Room 201</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">10:00</strong><span class="text-[#1a1f36]">CS301 — DSA Lab · Lab 2</span></div>
+            <div class="text-xs p-2 bg-[#f8f9fa] rounded-lg text-[#5a6282]"><strong class="block text-[#5a6282]">12:00</strong><span>Break</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">01:00</strong><span class="text-[#1a1f36]">CS341 — DBMS · Room 204</span></div>
+          </div>
+        </div>
+        <div class="border border-[#d1d9f0] rounded-2xl overflow-hidden shadow-sm">
+          <div class="bg-[#f1f5f9] px-4 py-3 font-semibold text-sm text-[#1a1f36] border-b border-[#d1d9f0]">Friday</div>
+          <div class="p-3 space-y-2">
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">09:00</strong><span class="text-[#1a1f36]">MA301 — Maths · Room 102</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">10:00</strong><span class="text-[#1a1f36]">CS321 — CN Lab · Lab 4</span></div>
+            <div class="text-xs p-2 bg-[#f8f9fa] rounded-lg text-[#5a6282]"><strong class="block text-[#5a6282]">12:00</strong><span>Break</span></div>
+            <div class="text-xs p-2 bg-[#eef3ff] rounded-lg"><strong class="block text-[#3b54b0]">01:00</strong><span class="text-[#1a1f36]">CS311 — WDF · Room 203</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-info mt-6" role="note">
+        <span class="callout-icon text-2xl" aria-hidden="true">ℹ️</span>
+        <div class="text-sm">
+          Lab sessions are 2 hours long. Regular lectures are 1 hour. Saturday is optional and has make-up lectures only when notified.
+        </div>
+      </div>
+    </section>
+
+    <section id="daily-schedule" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="daily-heading">
+      <div class="section-header mb-6">
+        <h2 id="daily-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Daily Schedule</h2>
+        <p class="text-[#5a6282] text-sm">Detailed view of today — Monday, 5 August 2026.</p>
+      </div>
+
+      <div class="timeline flex flex-col gap-0 pl-6 md:pl-8">
+        <div class="timeline-item flex gap-4 md:gap-5 py-3 items-start">
+          <span class="timeline-time text-sm font-semibold text-[#3b54b0] min-w-[4.5rem] pt-0.5">09:00 – 10:00</span>
+          <div class="timeline-connector flex flex-col items-center shrink-0 w-6 relative" aria-hidden="true">
+            <div class="timeline-dot w-3 h-3 rounded-full bg-[#3b54b0] border-2 border-[#d1d9f0] shrink-0 z-10"></div>
+            <div class="timeline-line flex-1 w-0.5 bg-[#d1d9f0] my-1"></div>
+          </div>
+          <div class="timeline-content flex-1 pt-0.5">
+            <div class="timeline-subject font-semibold text-[#1a1f36] flex flex-wrap items-center gap-2">Data Structures &amp; Algorithms <span class="badge badge-info text-[0.65rem] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#dbeafe] text-[#1e40af]">CS301</span></div>
+            <div class="timeline-detail text-sm text-[#5a6282]">Room 201, Main Block · Prof. D. Patel · Lecture</div>
+          </div>
+        </div>
+
+        <div class="timeline-item flex gap-4 md:gap-5 py-3 items-start">
+          <span class="timeline-time text-sm font-semibold text-[#3b54b0] min-w-[4.5rem] pt-0.5">10:00 – 12:00</span>
+          <div class="timeline-connector flex flex-col items-center shrink-0 w-6 relative" aria-hidden="true">
+            <div class="timeline-dot w-3 h-3 rounded-full bg-[#22c55e] border-2 border-[#d1d9f0] shrink-0 z-10"></div>
+            <div class="timeline-line flex-1 w-0.5 bg-[#d1d9f0] my-1"></div>
+          </div>
+          <div class="timeline-content flex-1 pt-0.5">
+            <div class="timeline-subject font-semibold text-[#1a1f36] flex flex-wrap items-center gap-2">Web Development Fundamentals — Lab <span class="badge badge-success text-[0.65rem] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#d1fae5] text-[#065f46]">CS311</span></div>
+            <div class="timeline-detail text-sm text-[#5a6282]">Computer Lab 3, Tech Block · Prof. R. Shah · Practical (2 hrs)</div>
+          </div>
+        </div>
+
+        <div class="timeline-item flex gap-4 md:gap-5 py-3 items-start">
+          <span class="timeline-time text-sm font-semibold text-[#5a6282] min-w-[4.5rem] pt-0.5">12:00 – 01:00</span>
+          <div class="timeline-connector flex flex-col items-center shrink-0 w-6 relative" aria-hidden="true">
+            <div class="timeline-dot w-3 h-3 rounded-full bg-[#5a6282] border-2 border-[#d1d9f0] shrink-0 z-10"></div>
+            <div class="timeline-line flex-1 w-0.5 bg-[#d1d9f0] my-1"></div>
+          </div>
+          <div class="timeline-content flex-1 pt-0.5 bg-[#f0f4ff] rounded-lg px-3 py-1.5">
+            <div class="timeline-subject font-semibold text-[#5a6282] flex flex-wrap items-center gap-2">Lunch Break</div>
+          </div>
+        </div>
+
+        <div class="timeline-item flex gap-4 md:gap-5 py-3 items-start">
+          <span class="timeline-time text-sm font-semibold text-[#3b54b0] min-w-[4.5rem] pt-0.5">01:00 – 02:00</span>
+          <div class="timeline-connector flex flex-col items-center shrink-0 w-6 relative" aria-hidden="true">
+            <div class="timeline-dot w-3 h-3 rounded-full bg-[#f59e0b] border-2 border-[#d1d9f0] shrink-0 z-10"></div>
+            <div class="timeline-line flex-1 w-0.5 bg-[#d1d9f0] my-1"></div>
+          </div>
+          <div class="timeline-content flex-1 pt-0.5">
+            <div class="timeline-subject font-semibold text-[#1a1f36] flex flex-wrap items-center gap-2">Computer Networks <span class="badge badge-warning text-[0.65rem] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#fef3c7] text-[#92400e]">CS321</span></div>
+            <div class="timeline-detail text-sm text-[#5a6282]">Room 305, Tech Block · Prof. A. Joshi · Lecture</div>
+          </div>
+        </div>
+
+        <div class="timeline-item flex gap-4 md:gap-5 py-3 items-start">
+          <span class="timeline-time text-sm font-semibold text-[#3b54b0] min-w-[4.5rem] pt-0.5">02:00 – 03:00</span>
+          <div class="timeline-connector flex flex-col items-center shrink-0 w-6 relative" aria-hidden="true">
+            <div class="timeline-dot w-3 h-3 rounded-full bg-[#ef4444] border-2 border-[#d1d9f0] shrink-0 z-10"></div>
+          </div>
+          <div class="timeline-content flex-1 pt-0.5">
+            <div class="timeline-subject font-semibold text-[#1a1f36] flex flex-wrap items-center gap-2">Operating Systems <span class="badge badge-danger text-[0.65rem] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#fee2e2] text-[#991b1b]">CS331</span></div>
+            <div class="timeline-detail text-sm text-[#5a6282]">Room 201, Main Block · Prof. N. Mehta · Lecture</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="class-details" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="class-detail-heading">
+      <div class="section-header mb-6">
+        <h2 id="class-detail-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Class Details</h2>
+        <p class="text-[#5a6282] text-sm">Complete information about each enrolled subject.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse" aria-label="Class details for enrolled subjects">
+          <thead>
+            <tr class="bg-[#f1f5f9] border-b border-[#d1d9f0]">
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Code</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Subject Name</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Faculty</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Contact</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Room</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Credits</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36] font-medium">CS301</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Data Structures &amp; Algorithms</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. D. Patel</td>
+              <td class="py-3 px-4 text-[#3b54b0]">d.patel@charusat.edu.in</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Room 201</td>
+              <td class="py-3 px-4 text-[#1a1f36]">4</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#dbeafe] text-[#1e40af]">Theory + Lab</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36] font-medium">CS311</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Web Development Fundamentals</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. R. Shah</td>
+              <td class="py-3 px-4 text-[#3b54b0]">r.shah@charusat.edu.in</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Lab 3</td>
+              <td class="py-3 px-4 text-[#1a1f36]">4</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#d1fae5] text-[#065f46]">Practical</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36] font-medium">CS321</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Computer Networks</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. A. Joshi</td>
+              <td class="py-3 px-4 text-[#3b54b0]">a.joshi@charusat.edu.in</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Room 305</td>
+              <td class="py-3 px-4 text-[#1a1f36]">3</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#dbeafe] text-[#1e40af]">Theory + Lab</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36] font-medium">CS331</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Operating Systems</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. N. Mehta</td>
+              <td class="py-3 px-4 text-[#3b54b0]">n.mehta@charusat.edu.in</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Room 201</td>
+              <td class="py-3 px-4 text-[#1a1f36]">4</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#dbeafe] text-[#1e40af]">Theory + Lab</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36] font-medium">MA301</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Discrete Mathematics</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. S. Chauhan</td>
+              <td class="py-3 px-4 text-[#3b54b0]">s.chauhan@charusat.edu.in</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Room 102</td>
+              <td class="py-3 px-4 text-[#1a1f36]">3</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#eef2ff] text-[#5a6282]">Theory</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36] font-medium">CS341</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Database Management Systems</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. V. Trivedi</td>
+              <td class="py-3 px-4 text-[#3b54b0]">v.trivedi@charusat.edu.in</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Lab 1</td>
+              <td class="py-3 px-4 text-[#1a1f36]">4</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-[#dbeafe] text-[#1e40af]">Theory + Lab</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gradient-to-br from-[#0f1729] to-[#172040] text-[#c0ccf0] mt-auto" role="contentinfo">
+    <div class="max-w-[1200px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+          <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+          <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+        </a>
+        <p class="text-[#8da2e0] text-sm mt-2 max-w-[35ch]">Your all-in-one academic management platform — built for modern students.</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Modules</h3>
+        <ul class="flex flex-col gap-2">
+          <li><a href="attendance.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Attendance</a></li>
+          <li><a href="assignments.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Assignments</a></li>
+          <li><a href="timetable.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Time Table</a></li>
+          <li><a href="study-material.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Study Material</a></li>
+          <li><a href="notice-board.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Notice Board</a></li>
+          <li><a href="profile.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Profile</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Contact</h3>
+        <address class="not-italic text-[#8da2e0] text-sm flex flex-col gap-2">
+          <span>CHARUSAT University</span>
+          <span>Changa, Anand, Gujarat — 388421</span>
+          <a href="mailto:support@studenthub.edu" class="hover:text-[#fbbf24] transition-colors">support@studenthub.edu</a>
+          <a href="tel:+912697265000" class="hover:text-[#fbbf24] transition-colors">+91 2697 265000</a>
+        </address>
+      </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-6 py-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-[#8da2e0]">
+      <p>© 2026 StudentHub. All rights reserved.</p>
+      <p>Designed for CHARUSAT University — WDF Semester 3 Project</p>
+    </div>
+  </footer>
+
+</body>
+</html>

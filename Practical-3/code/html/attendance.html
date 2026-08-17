@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Track your subject-wise attendance, view overall attendance percentages, and browse your complete attendance history on StudentHub." />
+  <title>Attendance — StudentHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+ 
+  <header class="bg-[#0f1729] shadow-lg sticky top-0 z-[100]" role="banner">
+    <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-2 md:gap-0 py-4 md:py-0 md:h-[4.5rem]">
+      <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+        <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+        <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+      </a>
+      <nav class="flex flex-wrap gap-0.5" aria-label="Primary navigation">
+        <a href="index.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Home</a>
+        <a href="about.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">About</a>
+        <a href="register.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Register</a>
+        <a href="login.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Login</a>
+        <a href="dashboard.html" class="bg-[#fbbf24] text-[#0f1729] text-sm font-bold px-4 py-1.5 rounded-full border border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:text-[#0f1729]">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="bg-white border-b border-[#d1d9f0]" aria-label="Breadcrumb">
+    <div class="max-w-[1200px] mx-auto px-6 py-2">
+      <ol class="flex flex-wrap items-center gap-1 text-xs text-[#5a6282]">
+        <li><a href="index.html" class="text-[#3b54b0] font-medium hover:underline">Home</a></li>
+        <li class="before:content-['›'] before:mx-1 before:text-[#8da2e0]"><a href="dashboard.html" class="text-[#3b54b0] font-medium hover:underline">Dashboard</a></li>
+        <li class="before:content-['›'] before:mx-1 before:text-[#8da2e0]"><span aria-current="page" class="text-[#1a1f36] font-semibold">Attendance</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main-content" class="flex-1 max-w-[1200px] w-full mx-auto px-6 py-8 md:py-12">
+
+    <section class="relative bg-gradient-to-br from-[#172040] to-[#2b3f80] rounded-2xl px-8 py-8 md:py-10 mb-8 text-white overflow-hidden page-hero">
+      <div class="relative z-10">
+        <h1 class="text-white text-2xl md:text-4xl font-bold">📅 Attendance</h1>
+        <p class="text-[#c0ccf0] text-base md:text-lg">Monitor your subject-wise attendance, percentage overview, and full history log.</p>
+      </div>
+    </section>
+
+    <section id="subject-attendance" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="subject-att-heading">
+      <div class="section-header mb-6">
+        <h2 id="subject-att-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Subject Attendance</h2>
+        <p class="text-[#5a6282] text-sm">Your attendance count for each enrolled subject this semester.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse" aria-label="Subject attendance records">
+          <thead>
+            <tr class="bg-[#f1f5f9] border-b border-[#d1d9f0]">
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Subject Code</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Subject Name</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Faculty</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Conducted</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Present</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Absent</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">CS301</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Data Structures &amp; Algorithms</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. D. Patel</td>
+              <td class="py-3 px-4 text-[#1a1f36]">40</td>
+              <td class="py-3 px-4 text-[#1a1f36]">27</td>
+              <td class="py-3 px-4 text-[#1a1f36]">13</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-red-100 text-red-700">Low (68%)</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">CS311</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Web Development Fundamentals</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. R. Shah</td>
+              <td class="py-3 px-4 text-[#1a1f36]">36</td>
+              <td class="py-3 px-4 text-[#1a1f36]">33</td>
+              <td class="py-3 px-4 text-[#1a1f36]">3</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Good (92%)</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">CS321</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Computer Networks</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. A. Joshi</td>
+              <td class="py-3 px-4 text-[#1a1f36]">38</td>
+              <td class="py-3 px-4 text-[#1a1f36]">31</td>
+              <td class="py-3 px-4 text-[#1a1f36]">7</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Good (82%)</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">CS331</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Operating Systems</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. N. Mehta</td>
+              <td class="py-3 px-4 text-[#1a1f36]">42</td>
+              <td class="py-3 px-4 text-[#1a1f36]">34</td>
+              <td class="py-3 px-4 text-[#1a1f36]">8</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Good (81%)</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">MA301</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Discrete Mathematics</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. S. Chauhan</td>
+              <td class="py-3 px-4 text-[#1a1f36]">35</td>
+              <td class="py-3 px-4 text-[#1a1f36]">29</td>
+              <td class="py-3 px-4 text-[#1a1f36]">6</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Good (83%)</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">CS341</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Database Management Systems</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. V. Trivedi</td>
+              <td class="py-3 px-4 text-[#1a1f36]">30</td>
+              <td class="py-3 px-4 text-[#1a1f36]">22</td>
+              <td class="py-3 px-4 text-[#1a1f36]">8</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-yellow-100 text-yellow-800">Moderate (73%)</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-warning mt-6" role="alert">
+        <span class="callout-icon text-2xl" aria-hidden="true">⚠️</span>
+        <div>
+          <strong>CS301 — Attendance Warning:</strong> You need to attend the next <strong>7 consecutive classes</strong> to reach the 75% minimum for Data Structures &amp; Algorithms.
+        </div>
+      </div>
+    </section>
+
+    <section id="attendance-percentage" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="att-pct-heading">
+      <div class="section-header mb-6">
+        <h2 id="att-pct-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Attendance Percentage</h2>
+        <p class="text-[#5a6282] text-sm">Visual breakdown of your attendance across all subjects.</p>
+      </div>
+
+      <div class="flex flex-col gap-6">
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-semibold text-sm text-[#1a1f36]">CS301 — Data Structures &amp; Algorithms</span>
+            <span class="font-bold text-sm text-red-600">68%</span>
+          </div>
+          <div class="w-full h-3 bg-[#eef3ff] rounded-full overflow-hidden" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" aria-label="CS301 attendance 68%">
+            <div class="h-full bg-red-500 rounded-full" style="width:68%;"></div>
+          </div>
+          <p class="text-xs text-[#5a6282] mt-1">27 / 40 classes · Need 75% to pass</p>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-semibold text-sm text-[#1a1f36]">CS311 — Web Development Fundamentals</span>
+            <span class="font-bold text-sm text-green-600">92%</span>
+          </div>
+          <div class="w-full h-3 bg-[#eef3ff] rounded-full overflow-hidden" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="CS311 attendance 92%">
+            <div class="h-full bg-green-500 rounded-full" style="width:92%;"></div>
+          </div>
+          <p class="text-xs text-[#5a6282] mt-1">33 / 36 classes · Excellent</p>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-semibold text-sm text-[#1a1f36]">CS321 — Computer Networks</span>
+            <span class="font-bold text-sm text-green-600">82%</span>
+          </div>
+          <div class="w-full h-3 bg-[#eef3ff] rounded-full overflow-hidden" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="CS321 attendance 82%">
+            <div class="h-full bg-green-500 rounded-full" style="width:82%;"></div>
+          </div>
+          <p class="text-xs text-[#5a6282] mt-1">31 / 38 classes · Good</p>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-semibold text-sm text-[#1a1f36]">CS331 — Operating Systems</span>
+            <span class="font-bold text-sm text-green-600">81%</span>
+          </div>
+          <div class="w-full h-3 bg-[#eef3ff] rounded-full overflow-hidden" role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100" aria-label="CS331 attendance 81%">
+            <div class="h-full bg-green-500 rounded-full" style="width:81%;"></div>
+          </div>
+          <p class="text-xs text-[#5a6282] mt-1">34 / 42 classes · Good</p>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-semibold text-sm text-[#1a1f36]">MA301 — Discrete Mathematics</span>
+            <span class="font-bold text-sm text-green-600">83%</span>
+          </div>
+          <div class="w-full h-3 bg-[#eef3ff] rounded-full overflow-hidden" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="MA301 attendance 83%">
+            <div class="h-full bg-green-500 rounded-full" style="width:83%;"></div>
+          </div>
+          <p class="text-xs text-[#5a6282] mt-1">29 / 35 classes · Good</p>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-semibold text-sm text-[#1a1f36]">CS341 — Database Management Systems</span>
+            <span class="font-bold text-sm text-yellow-600">73%</span>
+          </div>
+          <div class="w-full h-3 bg-[#eef3ff] rounded-full overflow-hidden" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" aria-label="CS341 attendance 73%">
+            <div class="h-full bg-yellow-500 rounded-full" style="width:73%;"></div>
+          </div>
+          <p class="text-xs text-[#5a6282] mt-1">22 / 30 classes · Needs attention</p>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+        <div class="bg-white border border-[#d1d9f0] rounded-2xl p-6 text-center shadow-sm">
+          <span class="block font-outfit text-3xl font-extrabold text-[#2b3f80]">82%</span>
+          <span class="block text-xs text-[#5a6282] font-medium uppercase tracking-wider mt-1">Overall Average</span>
+        </div>
+        <div class="bg-white border border-[#d1d9f0] rounded-2xl p-6 text-center shadow-sm">
+          <span class="block font-outfit text-3xl font-extrabold text-[#2b3f80]">221</span>
+          <span class="block text-xs text-[#5a6282] font-medium uppercase tracking-wider mt-1">Total Classes</span>
+        </div>
+        <div class="bg-white border border-[#d1d9f0] rounded-2xl p-6 text-center shadow-sm">
+          <span class="block font-outfit text-3xl font-extrabold text-[#22c55e]">176</span>
+          <span class="block text-xs text-[#5a6282] font-medium uppercase tracking-wider mt-1">Present</span>
+        </div>
+        <div class="bg-white border border-[#d1d9f0] rounded-2xl p-6 text-center shadow-sm">
+          <span class="block font-outfit text-3xl font-extrabold text-[#ef4444]">45</span>
+          <span class="block text-xs text-[#5a6282] font-medium uppercase tracking-wider mt-1">Absent</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="attendance-history" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="att-history-heading">
+      <div class="section-header mb-6">
+        <h2 id="att-history-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Attendance History</h2>
+        <p class="text-[#5a6282] text-sm">Day-by-day attendance log for the current semester.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse" aria-label="Daily attendance history records">
+          <thead>
+            <tr class="bg-[#f1f5f9] border-b border-[#d1d9f0]">
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Date</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Day</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Subject</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Time Slot</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Faculty</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">05 Aug 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Monday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS301 — Data Structures</td>
+              <td class="py-3 px-4 text-[#1a1f36]">09:00 – 10:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. D. Patel</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Present</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">05 Aug 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Monday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS311 — Web Dev.</td>
+              <td class="py-3 px-4 text-[#1a1f36]">10:00 – 12:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. R. Shah</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Present</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#5a6282] italic" colspan="6">No Classes (Holiday) — 04 Aug 2026, Sunday</td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">03 Aug 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Saturday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">MA301 — Discrete Maths</td>
+              <td class="py-3 px-4 text-[#1a1f36]">09:00 – 10:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. S. Chauhan</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-red-100 text-red-700">Absent</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">02 Aug 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Friday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS341 — DBMS</td>
+              <td class="py-3 px-4 text-[#1a1f36]">11:00 – 12:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. V. Trivedi</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Present</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">02 Aug 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Friday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS321 — Computer Networks</td>
+              <td class="py-3 px-4 text-[#1a1f36]">02:00 – 03:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. A. Joshi</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Present</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">01 Aug 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Thursday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS331 — Operating Systems</td>
+              <td class="py-3 px-4 text-[#1a1f36]">09:00 – 10:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. N. Mehta</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-yellow-100 text-yellow-800">Leave</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">01 Aug 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Thursday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS301 — Data Structures</td>
+              <td class="py-3 px-4 text-[#1a1f36]">11:00 – 12:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. D. Patel</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-red-100 text-red-700">Absent</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">31 Jul 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Wednesday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS311 — Web Dev.</td>
+              <td class="py-3 px-4 text-[#1a1f36]">10:00 – 12:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. R. Shah</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Present</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">31 Jul 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Wednesday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">MA301 — Discrete Maths</td>
+              <td class="py-3 px-4 text-[#1a1f36]">01:00 – 02:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. S. Chauhan</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Present</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">30 Jul 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Tuesday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS341 — DBMS</td>
+              <td class="py-3 px-4 text-[#1a1f36]">09:00 – 10:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. V. Trivedi</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-red-100 text-red-700">Absent</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">29 Jul 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Monday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">CS301 — Data Structures</td>
+              <td class="py-3 px-4 text-[#1a1f36]">09:00 – 10:00</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Prof. D. Patel</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Present</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gradient-to-br from-[#0f1729] to-[#172040] text-[#c0ccf0] mt-auto" role="contentinfo">
+    <div class="max-w-[1200px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+          <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+          <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+        </a>
+        <p class="text-[#8da2e0] text-sm mt-2 max-w-[35ch]">Your all-in-one academic management platform — built for modern students.</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Modules</h3>
+        <ul class="flex flex-col gap-2">
+          <li><a href="attendance.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Attendance</a></li>
+          <li><a href="assignments.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Assignments</a></li>
+          <li><a href="timetable.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Time Table</a></li>
+          <li><a href="study-material.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Study Material</a></li>
+          <li><a href="notice-board.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Notice Board</a></li>
+          <li><a href="profile.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Profile</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Contact</h3>
+        <address class="not-italic text-[#8da2e0] text-sm flex flex-col gap-2">
+          <span>CHARUSAT University</span>
+          <span>Changa, Anand, Gujarat — 388421</span>
+          <a href="mailto:support@studenthub.edu" class="hover:text-[#fbbf24] transition-colors">support@studenthub.edu</a>
+          <a href="tel:+912697265000" class="hover:text-[#fbbf24] transition-colors">+91 2697 265000</a>
+        </address>
+      </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-6 py-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-[#8da2e0]">
+      <p>© 2026 StudentHub. All rights reserved.</p>
+      <p>Designed for CHARUSAT University — WDF Semester 3 Project</p>
+    </div>
+  </footer>
+
+</body>
+</html>

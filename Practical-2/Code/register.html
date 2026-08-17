@@ -5,32 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Create your free StudentHub account. Sign up with your university email and start managing your academic life smarter." />
   <title>Register — Create Your StudentHub Account</title>
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a href="#main-content">Skip to main content</a>
 
-  <!-- ── Site Header ──────────────────────────────────────── -->
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <a href="index.html" class="site-logo" aria-label="StudentHub home">
-        <div class="logo-icon" aria-hidden="true">S</div>
-        <span class="logo-text">Student<span>Hub</span></span>
+  <header role="banner">
+    <div>
+      <a href="index.html" aria-label="StudentHub home">
+        <div aria-hidden="true">S</div>
+        <span>Student<span>Hub</span></span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
+      <nav aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="register.html" class="active" aria-current="page">Register</a>
+        <a href="register.html">Register</a>
         <a href="login.html">Login</a>
-        <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        <a href="dashboard.html">Dashboard</a>
       </nav>
     </div>
   </header>
 
-  <!-- ── Breadcrumb ────────────────────────────────────────── -->
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <div class="breadcrumb-inner">
+  <nav aria-label="Breadcrumb">
+    <div>
       <ol>
         <li><a href="index.html">Home</a></li>
         <li><span aria-current="page">Register</span></li>
@@ -38,52 +35,51 @@
     </div>
   </nav>
 
-  <!-- ── Main Content ─────────────────────────────────────── -->
   <main id="main-content">
 
-    <div class="page-hero">
-      <h1>Create Your Account</h1>
-      <p>Join StudentHub for free — takes less than 2 minutes.</p>
-    </div>
+    <section>
+      <div>
+        <h1>Create Your Account</h1>
+        <p>Join StudentHub for free — takes less than 2 minutes.</p>
+      </div>
+    </section>
 
-    <div class="auth-layout grid-2col">
+    <div>
 
-      <!-- Left: Feature Aside -->
-      <aside class="auth-aside" aria-label="Why join StudentHub">
+      <aside aria-label="Why join StudentHub">
         <h2>Why Join StudentHub?</h2>
         <p>Everything you need to stay on top of your academic life.</p>
-        <div class="auth-features">
-          <div class="auth-feature">
-            <div class="auth-feature-icon" aria-hidden="true">📅</div>
+        <div>
+          <div>
+            <span aria-hidden="true">📅</span>
             <span>Track attendance across all subjects instantly</span>
           </div>
-          <div class="auth-feature">
-            <div class="auth-feature-icon" aria-hidden="true">📝</div>
+          <div>
+            <span aria-hidden="true">📝</span>
             <span>View and submit assignments in one place</span>
           </div>
-          <div class="auth-feature">
-            <div class="auth-feature-icon" aria-hidden="true">📚</div>
+          <div>
+            <span aria-hidden="true">📚</span>
             <span>Access lecture notes and study materials anytime</span>
           </div>
-          <div class="auth-feature">
-            <div class="auth-feature-icon" aria-hidden="true">📢</div>
+          <div>
+            <span aria-hidden="true">📢</span>
             <span>Get real-time academic notices and holiday alerts</span>
           </div>
-          <div class="auth-feature">
-            <div class="auth-feature-icon" aria-hidden="true">🔒</div>
+          <div>
+            <span aria-hidden="true">🔒</span>
             <span>Your data is private, encrypted, and secure</span>
           </div>
         </div>
       </aside>
 
-      <!-- Right: Form -->
-      <div class="form-wrapper">
+      <div>
         <form action="dashboard.html" method="get" aria-label="Student registration form" novalidate>
 
-          <div class="form-grid">
+          <div>
 
-            <div class="form-group">
-              <label for="first-name">First Name <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="first-name">First Name <span aria-hidden="true">*</span></label>
               <input
                 type="text"
                 id="first-name"
@@ -95,8 +91,8 @@
               />
             </div>
 
-            <div class="form-group">
-              <label for="last-name">Last Name <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
               <input
                 type="text"
                 id="last-name"
@@ -108,8 +104,8 @@
               />
             </div>
 
-            <div class="form-group form-full">
-              <label for="email">University Email <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="email">University Email <span aria-hidden="true">*</span></label>
               <input
                 type="email"
                 id="email"
@@ -120,11 +116,11 @@
                 aria-required="true"
                 aria-describedby="email-hint"
               />
-              <span class="field-hint" id="email-hint">Use your official university email address.</span>
+              <span id="email-hint">Use your official university email address.</span>
             </div>
 
-            <div class="form-group">
-              <label for="enrollment-no">Enrollment Number <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="enrollment-no">Enrollment Number <span aria-hidden="true">*</span></label>
               <input
                 type="text"
                 id="enrollment-no"
@@ -135,11 +131,11 @@
                 aria-required="true"
                 aria-describedby="enrollment-hint"
               />
-              <span class="field-hint" id="enrollment-hint">As printed on your ID card (e.g. d26cs127).</span>
+              <span id="enrollment-hint">As printed on your ID card (e.g. d26cs127).</span>
             </div>
 
-            <div class="form-group">
-              <label for="mobile">Mobile Number <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="mobile">Mobile Number <span aria-hidden="true">*</span></label>
               <input
                 type="tel"
                 id="mobile"
@@ -151,8 +147,8 @@
               />
             </div>
 
-            <div class="form-group">
-              <label for="program">Program / Degree <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="program">Program / Degree <span aria-hidden="true">*</span></label>
               <select id="program" name="program" required aria-required="true">
                 <option value="" disabled selected>Select your program</option>
                 <option value="btech-cs">B.Tech — Computer Science</option>
@@ -167,8 +163,8 @@
               </select>
             </div>
 
-            <div class="form-group">
-              <label for="semester">Current Semester <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="semester">Current Semester <span aria-hidden="true">*</span></label>
               <select id="semester" name="semester" required aria-required="true">
                 <option value="" disabled selected>Select semester</option>
                 <option value="1">Semester 1</option>
@@ -182,8 +178,8 @@
               </select>
             </div>
 
-            <div class="form-group form-full">
-              <label for="dob">Date of Birth <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="dob">Date of Birth <span aria-hidden="true">*</span></label>
               <input
                 type="date"
                 id="dob"
@@ -194,8 +190,8 @@
               />
             </div>
 
-            <div class="form-group form-full">
-              <label for="password">Password <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="password">Password <span aria-hidden="true">*</span></label>
               <input
                 type="password"
                 id="password"
@@ -207,11 +203,11 @@
                 aria-describedby="password-hint"
                 autocomplete="new-password"
               />
-              <span class="field-hint" id="password-hint">Must be at least 8 characters, including a number and a symbol.</span>
+              <span id="password-hint">Must be at least 8 characters, including a number and a symbol.</span>
             </div>
 
-            <div class="form-group form-full">
-              <label for="confirm-password">Confirm Password <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <div>
+              <label for="confirm-password">Confirm Password <span aria-hidden="true">*</span></label>
               <input
                 type="password"
                 id="confirm-password"
@@ -224,33 +220,36 @@
               />
             </div>
 
-            <div class="form-group form-full">
-              <label style="display:flex;align-items:flex-start;gap:0.5rem;font-weight:400;cursor:pointer;">
+            <div>
+              <label>
                 <input
                   type="checkbox"
                   id="terms"
                   name="terms"
                   required
                   aria-required="true"
-                  style="margin-top:3px;width:auto;flex-shrink:0;"
                 />
-                <span>I agree to the <a href="about.html" style="font-weight:600;">Terms of Service</a> and <a href="about.html" style="font-weight:600;">Privacy Policy</a>.</span>
+                <span>I agree to the <a href="about.html">Terms of Service</a> and <a href="about.html">Privacy Policy</a>.</span>
               </label>
             </div>
 
-            <div class="form-full form-actions">
-              <button type="submit" class="btn btn-primary btn-full" id="register-submit-btn">
+            <div>
+              <button type="submit">
                 Create My Account
               </button>
             </div>
 
           </div>
 
-          <div class="form-divider" aria-hidden="true">or</div>
+          <div>
+            <span></span>
+            or
+            <span></span>
+          </div>
 
-          <p class="text-center" style="font-size:0.9rem; color:#5a6282;">
+          <p>
             Already have an account?
-            <a href="login.html" style="font-weight:600;">Sign in here →</a>
+            <a href="login.html">Sign in here →</a>
           </p>
 
         </form>
@@ -260,17 +259,16 @@
 
   </main>
 
-  <!-- ── Footer ───────────────────────────────────────────── -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="site-logo" aria-label="StudentHub home">
-          <div class="logo-icon" aria-hidden="true">S</div>
-          <span class="logo-text">Student<span>Hub</span></span>
+  <footer role="contentinfo">
+    <div>
+      <div>
+        <a href="index.html" aria-label="StudentHub home">
+          <div aria-hidden="true">S</div>
+          <span>Student<span>Hub</span></span>
         </a>
         <p>Your all-in-one academic management platform — built for modern students.</p>
       </div>
-      <div class="footer-links">
+      <div>
         <h3>Navigation</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -280,9 +278,9 @@
           <li><a href="dashboard.html">Dashboard</a></li>
         </ul>
       </div>
-      <div class="footer-links">
+      <div>
         <h3>Contact</h3>
-        <address class="footer-contact" style="font-style:normal;">
+        <address>
           <span>CHARUSAT University</span>
           <span>Changa, Anand, Gujarat — 388421</span>
           <a href="mailto:support@studenthub.edu">support@studenthub.edu</a>
@@ -290,7 +288,7 @@
         </address>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div>
       <p>© 2026 StudentHub. All rights reserved.</p>
       <p>Designed for CHARUSAT University — WDF Semester 3 Project</p>
     </div>

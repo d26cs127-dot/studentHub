@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stay informed with academic notices, upcoming campus events, and holiday announcements on the StudentHub Notice Board." />
+  <title>Notice Board — StudentHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="bg-[#0f1729] shadow-lg sticky top-0 z-[100]" role="banner">
+    <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-2 md:gap-0 py-4 md:py-0 md:h-[4.5rem]">
+      <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+        <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+        <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+      </a>
+      <nav class="flex flex-wrap gap-0.5" aria-label="Primary navigation">
+        <a href="index.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Home</a>
+        <a href="about.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">About</a>
+        <a href="register.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Register</a>
+        <a href="login.html" class="text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15 hover:border-white/25">Login</a>
+        <a href="dashboard.html" class="bg-[#fbbf24] text-[#0f1729] text-sm font-bold px-4 py-1.5 rounded-full border border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:text-[#0f1729]">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="bg-white border-b border-[#d1d9f0]" aria-label="Breadcrumb">
+    <div class="max-w-[1200px] mx-auto px-6 py-2">
+      <ol class="flex flex-wrap items-center gap-1 text-xs text-[#5a6282]">
+        <li><a href="index.html" class="text-[#3b54b0] font-medium hover:underline">Home</a></li>
+        <li class="before:content-['›'] before:mx-1 before:text-[#8da2e0]"><a href="dashboard.html" class="text-[#3b54b0] font-medium hover:underline">Dashboard</a></li>
+        <li class="before:content-['›'] before:mx-1 before:text-[#8da2e0]"><span aria-current="page" class="text-[#1a1f36] font-semibold">Notice Board</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <nav class="bg-white border-b border-[#d1d9f0] px-6 py-3 flex flex-wrap gap-3 text-sm" aria-label="Notice board sections">
+    <a href="#academic-notices" class="text-[#3b54b0] font-medium hover:underline">Academic Notices</a>
+    <a href="#events" class="text-[#3b54b0] font-medium hover:underline">Events</a>
+    <a href="#holidays" class="text-[#3b54b0] font-medium hover:underline">Holidays</a>
+  </nav>
+
+  <main id="main-content" class="flex-1 max-w-[1200px] w-full mx-auto px-6 py-8 md:py-12">
+
+    <section class="relative bg-gradient-to-br from-[#172040] to-[#2b3f80] rounded-2xl px-8 py-8 md:py-10 mb-8 text-white overflow-hidden page-hero">
+      <div class="relative z-10">
+        <h1 class="text-white text-2xl md:text-4xl font-bold">📢 Notice Board</h1>
+        <p class="text-[#c0ccf0] text-base md:text-lg">Stay up to date with academic announcements, campus events, and holiday schedules.</p>
+      </div>
+    </section>
+
+    <section id="academic-notices" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="academic-notices-heading">
+      <div class="section-header mb-6">
+        <h2 id="academic-notices-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Academic Notices</h2>
+        <p class="text-[#5a6282] text-sm">Official announcements from the academic office and faculty.</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6">
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow" aria-label="Notice: Mid-semester examination">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-red-100 text-red-700">Urgent</span>
+            <span>5 August 2026</span>
+            <span>Academic Office</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">Mid-Semester Examination Schedule Released</h3>
+          <p class="text-sm text-[#5a6282] mt-1">
+            The mid-semester examination for Semester 3 (Batch 2025–26) will be conducted from
+            <strong>1 September 2026 to 10 September 2026</strong>. The detailed timetable with
+            subject-wise dates has been uploaded to the Examination portal. Students are advised to
+            collect their admit cards from the administrative office by 25 August 2026.
+          </p>
+          <footer class="text-xs text-[#5a6282] mt-3">Reference No: CEU/EXAM/2026/08/047</footer>
+        </article>
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow" aria-label="Notice: Fee payment deadline">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-yellow-100 text-yellow-800">Important</span>
+            <span>3 August 2026</span>
+            <span>Finance Office</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">Semester Fee Payment — Last Date Extended</h3>
+          <p class="text-sm text-[#5a6282] mt-1">
+            Due to technical issues on the payment portal, the last date for Semester 3 fee payment
+            has been extended to <strong>20 August 2026</strong>. Students who have not paid fees
+            will not be permitted to appear in mid-semester examinations. Contact the finance office
+            for queries.
+          </p>
+          <footer class="text-xs text-[#5a6282] mt-3">Reference No: CEU/FIN/2026/08/012</footer>
+        </article>
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow" aria-label="Notice: Library working hours">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-blue-100 text-blue-700">General</span>
+            <span>1 August 2026</span>
+            <span>Library Administration</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">Revised Library Timings — August 2026</h3>
+          <p class="text-sm text-[#5a6282] mt-1">
+            The central library will remain open <strong>Monday to Saturday, 7:30 AM to 9:00 PM</strong>
+            during the exam preparation season. Sunday hours: 10:00 AM to 5:00 PM.
+            E-library access via <span class="font-mono">library.charusat.edu.in</span> is available 24/7.
+          </p>
+          <footer class="text-xs text-[#5a6282] mt-3">Reference No: CEU/LIB/2026/08/003</footer>
+        </article>
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow" aria-label="Notice: Attendance shortfall warning">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-red-100 text-red-700">Warning</span>
+            <span>28 July 2026</span>
+            <span>Dean of Students</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">Attendance Shortfall Warning — B.Tech Sem 3</h3>
+          <p class="text-sm text-[#5a6282] mt-1">
+            Students with attendance below 75% in any subject are advised to meet their class
+            advisor immediately. Attendance below 75% will result in barring from the examination.
+            Detailed lists have been sent to class advisors. Students may apply for condonation with
+            valid medical documentation.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="events" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="events-heading">
+      <div class="section-header mb-6">
+        <h2 id="events-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Events</h2>
+        <p class="text-[#5a6282] text-sm">Upcoming campus events, workshops, competitions, and guest lectures.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col" aria-label="Event: TechFusion Hackathon">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Open for Registration</span>
+            <span>15 – 16 August 2026</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">🏆 TechFusion National Hackathon 2026</h3>
+          <p class="text-sm text-[#5a6282] mt-1 flex-1">
+            24-hour hackathon open to all engineering students. Theme: <strong>"AI for Social Good"</strong>.
+            Teams of 2–4 members. Cash prizes worth ₹1,50,000. Industry mentors from Google, Infosys, and TCS.
+          </p>
+          <div class="flex flex-wrap gap-2 items-center text-xs text-[#5a6282] mt-2">
+            <span>📍 Main Auditorium, CHARUSAT</span>
+            <span>⏰ Registration closes: 10 Aug</span>
+          </div>
+          <a href="#" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-semibold text-sm bg-[#2b3f80] text-white border-2 border-[#2b3f80] hover:bg-[#3b54b0] hover:border-[#3b54b0] hover:-translate-y-0.5 hover:shadow-md transition-all duration-250 self-start mt-3">Register for Hackathon</a>
+        </article>
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col" aria-label="Event: Guest Lecture by Dr. Sinha">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-blue-100 text-blue-700">Upcoming</span>
+            <span>10 August 2026, 2:00 PM</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">🎤 Guest Lecture: Machine Learning in Healthcare</h3>
+          <p class="text-sm text-[#5a6282] mt-1 flex-1">
+            Dr. Ananya Sinha, Senior AI Researcher at IIT Bombay, will speak on the applications of
+            Machine Learning in early disease detection and patient management systems.
+          </p>
+          <div class="flex flex-wrap gap-2 items-center text-xs text-[#5a6282] mt-2">
+            <span>📍 Seminar Hall B, Tech Block</span>
+            <span>🎓 Open to all branches</span>
+          </div>
+        </article>
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col" aria-label="Event: Annual Cultural Fest Umang">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-yellow-100 text-yellow-800">Upcoming</span>
+            <span>22 – 24 August 2026</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">🎭 Umang — Annual Cultural Festival</h3>
+          <p class="text-sm text-[#5a6282] mt-1 flex-1">
+            CHARUSAT's biggest annual cultural event returns! Events include dance, drama, music,
+            fashion show, debate, and literary competitions. Open to all students.
+            Inter-college participants welcome.
+          </p>
+          <div class="flex flex-wrap gap-2 items-center text-xs text-[#5a6282] mt-2">
+            <span>📍 University Grounds</span>
+            <span>🎟️ Free entry for CHARUSAT students</span>
+          </div>
+          <a href="#" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-semibold text-sm bg-[#2b3f80] text-white border-2 border-[#2b3f80] hover:bg-[#3b54b0] hover:border-[#3b54b0] hover:-translate-y-0.5 hover:shadow-md transition-all duration-250 self-start mt-3">Register for Events</a>
+        </article>
+
+        <article class="border border-[#d1d9f0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col" aria-label="Event: Web Development Workshop">
+          <div class="flex flex-wrap items-center gap-2 text-xs text-[#5a6282] mb-2">
+            <span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Open for Registration</span>
+            <span>8 August 2026, 10:00 AM</span>
+          </div>
+          <h3 class="text-base font-bold text-[#1a1f36]">💻 Workshop: Responsive Web Design with CSS</h3>
+          <p class="text-sm text-[#5a6282] mt-1 flex-1">
+            A hands-on 4-hour workshop covering modern CSS Grid, Flexbox, animations, and responsive
+            design patterns. Conducted by the CSE Department. Bring your laptop.
+          </p>
+          <div class="flex flex-wrap gap-2 items-center text-xs text-[#5a6282] mt-2">
+            <span>📍 Computer Lab 3</span>
+            <span>🪑 Limited seats: 40</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="holidays" class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm mb-8" aria-labelledby="holidays-heading">
+      <div class="section-header mb-6">
+        <h2 id="holidays-heading" class="text-[#1e2d5a] text-xl md:text-2xl font-bold mb-1 flex items-center gap-2">Holidays</h2>
+        <p class="text-[#5a6282] text-sm">Official holiday calendar for the Academic Year 2026–27 (Semester 3).</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse" aria-label="Holiday calendar for Semester 3, 2026-27">
+          <thead>
+            <tr class="bg-[#f1f5f9] border-b border-[#d1d9f0]">
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Date</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Day</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Holiday</th>
+              <th scope="col" class="text-left py-3 px-4 font-semibold text-[#1a1f36]">Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">15 August 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Saturday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Independence Day</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-blue-100 text-blue-700">National</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">24 August 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Monday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Janmashtami</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Religious</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">7 September 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Monday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Ganesh Chaturthi</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-green-100 text-green-700">Religious</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">2 October 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Friday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Gandhi Jayanti</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-blue-100 text-blue-700">National</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">20 October 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Tuesday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Diwali (Dhan Teras)</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-yellow-100 text-yellow-800">Festive Break</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">21 October 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Wednesday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Diwali (Kali Chaudas)</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-yellow-100 text-yellow-800">Festive Break</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">22 October 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Thursday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Diwali (Lakshmi Puja)</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-yellow-100 text-yellow-800">Festive Break</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">23 October 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Friday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Diwali (New Year)</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-yellow-100 text-yellow-800">Festive Break</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">14 November 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Saturday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Children's Day</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-gray-100 text-gray-700">Optional</span></td>
+            </tr>
+            <tr class="border-b border-[#eef3ff]">
+              <td class="py-3 px-4 text-[#1a1f36]">25 December 2026</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Friday</td>
+              <td class="py-3 px-4 text-[#1a1f36]">Christmas Day</td>
+              <td class="py-3 px-4"><span class="inline-block text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide bg-blue-100 text-blue-700">National</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-warning mt-6" role="note">
+        <span class="callout-icon text-2xl" aria-hidden="true">📌</span>
+        <div class="text-sm">
+          <strong>Note:</strong> The university may declare additional holidays based on government orders. Check this board regularly for updates. Sunday is a regular weekly off for all students.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gradient-to-br from-[#0f1729] to-[#172040] text-[#c0ccf0] mt-auto" role="contentinfo">
+    <div class="max-w-[1200px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 no-underline" aria-label="StudentHub home">
+          <div class="w-10 h-10 bg-[#fbbf24] rounded-xl flex items-center justify-center text-xl font-extrabold text-[#0f1729] shrink-0" aria-hidden="true">S</div>
+          <span class="font-outfit text-2xl font-extrabold text-white tracking-tight">Student<span class="text-[#fbbf24]">Hub</span></span>
+        </a>
+        <p class="text-[#8da2e0] text-sm mt-2 max-w-[35ch]">Your all-in-one academic management platform — built for modern students.</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Modules</h3>
+        <ul class="flex flex-col gap-2">
+          <li><a href="attendance.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Attendance</a></li>
+          <li><a href="assignments.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Assignments</a></li>
+          <li><a href="timetable.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Time Table</a></li>
+          <li><a href="study-material.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Study Material</a></li>
+          <li><a href="notice-board.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Notice Board</a></li>
+          <li><a href="profile.html" class="text-[#8da2e0] text-sm hover:text-[#fbbf24] transition-colors">Profile</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Contact</h3>
+        <address class="not-italic text-[#8da2e0] text-sm flex flex-col gap-2">
+          <span>CHARUSAT University</span>
+          <span>Changa, Anand, Gujarat — 388421</span>
+          <a href="mailto:support@studenthub.edu" class="hover:text-[#fbbf24] transition-colors">support@studenthub.edu</a>
+          <a href="tel:+912697265000" class="hover:text-[#fbbf24] transition-colors">+91 2697 265000</a>
+        </address>
+      </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-6 py-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-[#8da2e0]">
+      <p>© 2026 StudentHub. All rights reserved.</p>
+      <p>Designed for CHARUSAT University — WDF Semester 3 Project</p>
+    </div>
+  </footer>
+
+</body>
+</html>
