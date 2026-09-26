@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "TechFusion Hackathon",
+    "category": "Competition",
+    "date": "2026-08-15",
+    "location": "Main Auditorium, CHARUSAT",
+    "description": "24-hour hackathon on AI for Social Good. Teams of 2-4. Prizes worth ₹1,50,000."
+  },
+  {
+    "id": 2,
+    "title": "Guest Lecture: Machine Learning in Healthcare",
+    "category": "Lecture",
+    "date": "2026-08-10",
+    "location": "Seminar Hall B, Tech Block",
+    "description": "Dr. Ananya Sinha from IIT Bombay speaks on ML applications in disease detection."
+  },
+  {
+    "id": 3,
+    "title": "Umang — Annual Cultural Festival",
+    "category": "Festival",
+    "date": "2026-08-22",
+    "location": "University Grounds",
+    "description": "Three-day cultural fest with dance, drama, music, fashion show, debate, and literary competitions."
+  },
+  {
+    "id": 4,
+    "title": "Workshop: Responsive Web Design with CSS",
+    "category": "Workshop",
+    "date": "2026-08-08",
+    "location": "Computer Lab 3",
+    "description": "Hands-on workshop covering CSS Grid, Flexbox, animations, and responsive design patterns."
+  },
+  {
+    "id": 5,
+    "title": "Seminar on Cybersecurity Trends",
+    "category": "Seminar",
+    "date": "2026-09-05",
+    "location": "Conference Hall, Admin Block",
+    "description": "Industry experts discuss latest cybersecurity threats and defense mechanisms."
+  },
+  {
+    "id": 6,
+    "title": "Robotics Club Exhibition",
+    "category": "Exhibition",
+    "date": "2026-09-10",
+    "location": "Mechanical Engineering Lab",
+    "description": "Showcase of student-built robots and automation projects."
+  },
+  {
+    "id": 7,
+    "title": "Literary Debate Competition",
+    "category": "Competition",
+    "date": "2026-09-12",
+    "location": "Literature Hall, Humanities Block",
+    "description": "Debate on contemporary social issues. Open to all streams."
+  },
+  {
+    "id": 8,
+    "title": "Yoga and Wellness Session",
+    "category": "Wellness",
+    "date": "2026-09-03",
+    "location": "Sports Complex, Yoga Hall",
+    "description": "Guided yoga session for stress relief and flexibility, conducted by certified instructor."
+  },
+  {
+    "id": 9,
+    "title": "AI and Machine Learning Workshop",
+    "category": "Workshop",
+    "date": "2026-09-18",
+    "location": "Computer Lab 1",
+    "description": "Introduction to ML algorithms and hands-on practice with Python and scikit-learn."
+  },
+  {
+    "id": 10,
+    "title": "Campus Cleanliness Drive",
+    "category": "Social Service",
+    "date": "2026-09-20",
+    "location": "University Campus",
+    "description": "Volunteer-driven cleanliness drive to promote hygiene and environmental awareness."
+  },
+  {
+    "id": 11,
+    "title": "Chess Tournament",
+    "category": "Competition",
+    "date": "2026-09-25",
+    "location": "Indoor Games Room",
+    "description": "Knockout-style chess tournament. Open to students and faculty."
+  },
+  {
+    "id": 12,
+    "title": "Guest Lecture: Blockchain Technology",
+    "category": "Lecture",
+    "date": "2026-10-01",
+    "location": "Seminar Hall A, Tech Block",
+    "description": "Exploring blockchain beyond cryptocurrency: smart contracts, DApps, and enterprise use cases."
+  },
+  {
+    "id": 13,
+    "title": "Traditional Dance Workshop",
+    "category": "Workshop",
+    "date": "2026-10-05",
+    "location": "Cultural Centre",
+    "description": "Learn classical and folk dance forms from expert instructors."
+  },
+  {
+    "id": 14,
+    "title": "Science and Technology Exhibition",
+    "category": "Exhibition",
+    "date": "2026-10-15",
+    "location": "Exhibition Hall, Science Block",
+    "description": "Display of innovative projects and experiments from various science departments."
+  },
+  {
+    "id": 15,
+    "title": "Annual Sports Meet",
+    "category": "Sports",
+    "date": "2026-11-10",
+    "location": "University Sports Ground",
+    "description": "Track and field events, team sports, and individual competitions spanning two days."
+  }
+]
