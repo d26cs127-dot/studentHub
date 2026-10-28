@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "How do I reset my password if I forget it?",
+    "answer": "You can reset your password by clicking the 'Forgot Password' link on the login page. You'll receive a reset link at your registered university email address.",
+    "category": "Account"
+  },
+  {
+    "id": 2,
+    "question": "What is the minimum attendance percentage required to appear for exams?",
+    "answer": "Students must maintain a minimum of 75% attendance in each subject to be eligible for appearing in semester examinations.",
+    "category": "Academics"
+  },
+  {
+    "id": 3,
+    "question": "How can I access the e-library resources from home?",
+    "answer": "You can access e-library resources 24/7 by visiting library.charusat.edu.in and logging in with your student credentials.",
+    "category": "Library"
+  },
+  {
+    "id": 4,
+    "question": "Where do I submit my assignments online?",
+    "answer": "Assignments can be submitted through the Assignments section in StudentHub. Each course has a dedicated upload portal for assignments.",
+    "category": "Assignments"
+  },
+  {
+    "id": 5,
+    "question": "What should I do if I notice an error in my timetable?",
+    "answer": "Please contact the academic office or your department coordinator immediately if you find any discrepancies in your timetable.",
+    "category": "Timetable"
+  },
+  {
+    "id": 6,
+    "question": "Are there any fees for accessing study materials on StudentHub?",
+    "answer": "No, all study materials available on StudentHub are free for registered students. There are no hidden charges or subscription fees.",
+    "category": "Study Material"
+  },
+  {
+    "id": 7,
+    "question": "How do I report a technical issue or bug in the portal?",
+    "answer": "You can report technical issues by emailing support@studenthub.edu or using the 'Report Issue' option in your profile settings.",
+    "category": "Technical Support"
+  },
+  {
+    "id": 8,
+    "question": "Can I access StudentHub from my mobile device?",
+    "answer": "Yes, StudentHub is fully responsive and can be accessed from any smartphone or tablet using a web browser.",
+    "category": "Accessibility"
+  },
+  {
+    "id": 9,
+    "question": "What is the process for applying for leave of absence?",
+    "answer": "Leave applications must be submitted through the online portal with proper documentation and approved by the concerned department head.",
+    "category": "Academics"
+  },
+  {
+    "id": 10,
+    "question": "How are internal assessments and practical exams conducted?",
+    "answer": "Internal assessments include quizzes, assignments, and mid-term tests. Practical exams are conducted in respective labs as per the schedule published by the department.",
+    "category": "Academics"
+  },
+  {
+    "id": 11,
+    "question": "What scholarships are available for students?",
+    "answer": "Various merit-based and need-based scholarships are available. Details can be found in the Scholarships section or by contacting the finance office.",
+    "category": "Finance"
+  },
+  {
+    "id": 12,
+    "question": "How do I update my contact information in the portal?",
+    "answer": "You can update your contact information from the Profile section. Changes to email or phone number may require verification.",
+    "category": "Account"
+  },
+  {
+    "id": 13,
+    "question": "What is the policy on plagiarism for assignments and projects?",
+    "answer": "Plagiarism is strictly prohibited. All submissions are checked for originality, and penalties apply for plagiarized work as per university policy.",
+    "category": "Academics"
+  },
+  {
+    "id": 14,
+    "question": "Are there any sports facilities available on campus?",
+    "answer": "Yes, the campus has extensive sports facilities including a gymnasium, sports ground, courts for basketball, badminton, tennis, and a swimming pool.",
+    "category": "Facilities"
+  },
+  {
+    "id": 15,
+    "question": "How can I participate in extracurricular clubs and activities?",
+    "answer": "Information about clubs and activities is available in the Notice Board. You can contact the respective club coordinators or visit the student activities center.",
+    "category": "Student Life"
+  }
+]

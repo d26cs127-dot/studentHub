@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Niraj Visavadiya",
+    "email": "niraj.visavadiya@charusat.edu.in",
+    "course": "B.Tech - Computer Science",
+    "year": 3,
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Priya Sharma",
+    "email": "priya.sharma@charusat.edu.in",
+    "course": "B.Tech - Information Technology",
+    "year": 2,
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Amit Patel",
+    "email": "amit.patel@charusat.edu.in",
+    "course": "B.Tech - Electronics & Communication",
+    "year": 4,
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "name": "Sneha Desai",
+    "email": "sneha.desai@charusat.edu.in",
+    "course": "B.Tech - Mechanical Engineering",
+    "year": 3,
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "name": "Vikram Singh",
+    "email": "vikram.singh@charusat.edu.in",
+    "course": "M.Tech - Computer Science",
+    "year": 2,
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "name": "Anjali Mehta",
+    "email": "anjali.mehta@charusat.edu.in",
+    "course": "MCA",
+    "year": 3,
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "name": "Karan Joshi",
+    "email": "karan.joshi@charusat.edu.in",
+    "course": "B.Sc. IT",
+    "year": 2,
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "name": "Divya Nair",
+    "email": "divya.nair@charusat.edu.in",
+    "course": "BCA",
+    "year": 1,
+    "status": "Active"
+  },
+  {
+    "id": 9,
+    "name": "Arjun Reddy",
+    "email": "arjun.reddy@charusat.edu.in",
+    "course": "B.Tech - Computer Science",
+    "year": 1,
+    "status": "Active"
+  },
+  {
+    "id": 10,
+    "name": "Fathima Khan",
+    "email": "fathima.khan@charusat.edu.in",
+    "course": "B.Tech - Information Technology",
+    "year": 4,
+    "status": "Active"
+  },
+  {
+    "id": 11,
+    "name": "Gautam Kumar",
+    "email": "gautam.kumar@charusat.edu.in",
+    "course": "B.Tech - Electronics & Communication",
+    "year": 2,
+    "status": "Active"
+  },
+  {
+    "id": 12,
+    "name": "Ishita Gupta",
+    "email": "ishita.gupta@charusat.edu.in",
+    "course": "B.Tech - Mechanical Engineering",
+    "year": 1,
+    "status": "Active"
+  },
+  {
+    "id": 13,
+    "name": "Rohit Kapoor",
+    "email": "rohit.kapoor@charusat.edu.in",
+    "course": "M.Tech - Computer Science",
+    "year": 1,
+    "status": "Active"
+  },
+  {
+    "id": 14,
+    "name": "Simran Kaur",
+    "email": "simran.kaur@charusat.edu.in",
+    "course": "MCA",
+    "year": 2,
+    "status": "Active"
+  },
+  {
+    "id": 15,
+    "name": "Yashvardhan Singh",
+    "email": "yashvardhan.singh@charusat.edu.in",
+    "course": "B.Sc. IT",
+    "year": 3,
+    "status": "Active"
+  }
+]
