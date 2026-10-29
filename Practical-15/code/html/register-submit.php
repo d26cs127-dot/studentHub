@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 require __DIR__ . '/db.php';
+require __DIR__ . '/auth.php';
+require_csrf($_POST['csrf_token'] ?? null);
 $errors=[]; $success=false; $submittedName='';
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { $errors['form']='Please submit the registration form using POST.'; http_response_code(405); }
 else {

@@ -11,4 +11,6 @@ function require_login(): void {
 }
 function require_admin(): void { require_login(); if (($_SESSION['role']??'Student')!=='Admin') { http_response_code(403); header('Location: login.html?error=unauthorized'); exit; } }
 function log_action(mysqli $conn,string $action,string $details=''): void { $q=mysqli_prepare($conn,'INSERT INTO audit_logs (student_id,action,details) VALUES (?,?,?)'); if($q){$id=(int)($_SESSION['student_id']??0);mysqli_stmt_bind_param($q,'iss',$id,$action,$details);mysqli_stmt_execute($q);mysqli_stmt_close($q);} }
+function csrf_token(): string { if (empty($_SESSION['csrf_token'])) $_SESSION['csrf_token']=bin2hex(random_bytes(32)); return $_SESSION['csrf_token']; }
+function require_csrf(?string $token): void { if (!$token || !hash_equals((string)($_SESSION['csrf_token']??''),$token)) { http_response_code(419); exit('Invalid CSRF token.'); } }
 

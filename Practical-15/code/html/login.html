@@ -80,6 +80,7 @@
       <div class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm">
         <div id="login-message" class="callout callout-error mb-5" role="alert" hidden></div>
         <form action="authenticate.php" method="post" aria-label="Sign in form">
+          <input type="hidden" name="csrf_token" data-csrf />
 
           <div class="flex flex-col gap-5">
 
@@ -198,6 +199,7 @@
 
   <script src="js/script.js" defer></script>
   <script>
+    fetch('csrf_token.php').then(response=>response.json()).then(data=>{const field=document.querySelector('[data-csrf]');if(field)field.value=data.token;});
     const loginMessages={invalid:'Invalid email/username or password.',unauthorized:'Unauthorized access. Please sign in with the required role.',timeout:'Your session expired. Please sign in again.',logged_out:'You have been logged out successfully.'};
     const key=new URLSearchParams(location.search).get('error'), box=document.getElementById('login-message');
     if(key&&loginMessages[key]){box.textContent=loginMessages[key];box.hidden=false;}

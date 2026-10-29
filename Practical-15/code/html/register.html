@@ -79,6 +79,7 @@
 
       <div class="bg-white rounded-2xl border border-[#d1d9f0] p-6 md:p-8 shadow-sm">
         <form action="register-submit.php" method="post" aria-label="Student registration form" data-registration-form novalidate>
+          <input type="hidden" name="csrf_token" data-csrf />
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div class="form-field col-span-1 md:col-span-2 flex flex-col gap-1">
@@ -202,6 +203,6 @@
     </div>
   </footer>
 
-  <!-- <script src="js/script.js" defer></script> -->
+  <script>fetch('csrf_token.php').then(response=>response.json()).then(data=>{const field=document.querySelector('[data-csrf]');if(field)field.value=data.token;});</script>
 </body>
 </html>

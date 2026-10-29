@@ -1,0 +1,13 @@
+<?php
+require __DIR__.'/../auth.php';
+require_admin();
+require __DIR__.'/../db.php';
+require __DIR__.'/error.php';
+header('Content-Type: application/json; charset=utf-8');
+$method=$_SERVER['REQUEST_METHOD']??'GET';
+if($method==='GET'){$term=trim((string)($_GET['q']??''));$like='%'.$term.'%';$q=mysqli_prepare($conn,'SELECT student_id,enrollment_no,full_name,email,department,role,status FROM students WHERE full_name LIKE ? OR email LIKE ? OR department LIKE ? ORDER BY student_id DESC');mysqli_stmt_bind_param($q,'sss',$like,$like,$like);mysqli_stmt_execute($q);$r=mysqli_stmt_get_result($q);$rows=[];while($row=$r->fetch_assoc())$rows[]=$row;mysqli_stmt_close($q);echo json_encode(['success'=>true,'data'=>$rows]);exit;}
+$body=$method==='POST'?$_POST:(json_decode(file_get_contents('php://input'),true)??[]);$id=(int)($body['student_id']??0);$name=trim((string)($body['full_name']??''));$email=strtolower(trim((string)($body['email']??'')));$course=trim((string)($body['department']??''));
+if($method==='POST'){if($name===''||!filter_var($email,FILTER_VALIDATE_EMAIL))api_error('Name and valid email are required.',422);$hash=password_hash('Student@123',PASSWORD_DEFAULT);$q=mysqli_prepare($conn,"INSERT INTO students (enrollment_no,full_name,email,username,password_hash,department,role,status) VALUES (?,?,?,?,?,?, 'Student','active')");$enrol='ADM-'.strtoupper(substr(bin2hex(random_bytes(5)),0,8));$username=$email;mysqli_stmt_bind_param($q,'ssssss',$enrol,$name,$email,$username,$hash,$course);$ok=mysqli_stmt_execute($q);mysqli_stmt_close($q);if(!$ok)api_error('Student could not be added.',409);log_action($conn,'student_create',$email);echo json_encode(['success'=>true,'message'=>'Student added.']);exit;}
+if($method==='PUT'){if(!$id||$name==='')api_error('Student id and name are required.',422);$q=mysqli_prepare($conn,'UPDATE students SET full_name=?,email=?,department=? WHERE student_id=?');mysqli_stmt_bind_param($q,'sssi',$name,$email,$course,$id);$ok=mysqli_stmt_execute($q);mysqli_stmt_close($q);log_action($conn,'student_update',(string)$id);echo json_encode(['success'=>$ok,'message'=>$ok?'Student updated.':'Student could not be updated.']);exit;}
+if($method==='DELETE'){if(!$id)api_error('Student id is required.',422);$q=mysqli_prepare($conn,"UPDATE students SET status='inactive' WHERE student_id=?");mysqli_stmt_bind_param($q,'i',$id);$ok=mysqli_stmt_execute($q);mysqli_stmt_close($q);log_action($conn,'student_soft_delete',(string)$id);echo json_encode(['success'=>$ok,'message'=>$ok?'Student deactivated.':'Student could not be deactivated.']);exit;}
+api_error('Method not allowed.',405);

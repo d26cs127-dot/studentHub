@@ -346,6 +346,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+document.addEventListener('DOMContentLoaded',()=>{fetch('api/session.php').then(response=>response.json()).then(session=>{document.querySelectorAll('[data-session-nav]').forEach(node=>node.remove());const nav=document.querySelector('[data-mobile-menu]');if(!nav)return;const links=session.loggedIn?(session.role==='Admin'?[['admin.php','Admin Dashboard'],['students.php','Manage Students'],['events_manage.php','Manage Events'],['logout.php','Logout']]:[['dashboard.php','Dashboard'],['profile.php','Profile'],['logout.php','Logout']]):[['login.html','Login'],['register.html','Register']];links.forEach(([href,label])=>{const link=document.createElement('a');link.href=href;link.textContent=label;link.dataset.sessionNav='true';link.className='text-[#c0ccf0] text-sm font-medium px-4 py-1.5 rounded-full border border-transparent hover:text-white hover:bg-white/15';nav.append(link)})}).catch(()=>{});});
+
 // JSON browsers for events, students, and FAQs (uses the existing data/*.json files).
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("[data-json-browser]").forEach(function (browser) {

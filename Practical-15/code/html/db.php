@@ -16,9 +16,11 @@ $migrations = [
     "ALTER TABLE students ADD COLUMN status VARCHAR(20) NOT NULL DEFAULT 'Active' AFTER role",
     "ALTER TABLE events ADD COLUMN description TEXT NULL AFTER event_name",
     "ALTER TABLE events ADD COLUMN poster VARCHAR(255) NULL AFTER description",
+    "ALTER TABLE students ADD COLUMN last_login DATETIME NULL AFTER status",
 ];
 foreach ($migrations as $sql) { @mysqli_query($conn, $sql); }
 @mysqli_query($conn, "CREATE TABLE IF NOT EXISTS audit_logs (log_id INT AUTO_INCREMENT PRIMARY KEY, student_id INT NULL, action VARCHAR(80) NOT NULL, details VARCHAR(255) NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB");
+@mysqli_query($conn, "CREATE TABLE IF NOT EXISTS remember_tokens (token_id INT AUTO_INCREMENT PRIMARY KEY, student_id INT NOT NULL, token_hash CHAR(64) NOT NULL UNIQUE, expires_at DATETIME NOT NULL) ENGINE=InnoDB");
 
 $adminEmail = 'admin@studenthub.edu';
 $adminHash = password_hash('Admin@123', PASSWORD_DEFAULT);
