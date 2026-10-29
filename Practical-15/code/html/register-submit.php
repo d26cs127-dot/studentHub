@@ -7,6 +7,7 @@ $errors=[]; $success=false; $submittedName='';
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { $errors['form']='Please submit the registration form using POST.'; http_response_code(405); }
 else {
  $name=trim((string)($_POST['full-name']??'')); $email=strtolower(trim((string)($_POST['email']??''))); $username=strtolower(trim((string)($_POST['username']??''))); $mobile=preg_replace('/[\s()\-]/','',(string)($_POST['mobile']??'')); $course=(string)($_POST['course']??''); $year=(string)($_POST['year']??''); $gender=(string)($_POST['gender']??''); $password=(string)($_POST['password']??''); $confirm=(string)($_POST['confirm-password']??''); $submittedName=$name;
+ if (strtoupper(trim((string)($_POST['captcha']??''))) !== strtoupper((string)($_SESSION['captcha_code']??''))) $errors['captcha']='Enter the security code shown above.';
  if (!preg_match("/^[\p{L}]+(?:[ '-][\p{L}]+)*$/u",$name)) $errors['full-name']='Enter a valid name.';
  if (!filter_var($email,FILTER_VALIDATE_EMAIL)) $errors['email']='Enter a valid email address.';
  if (!preg_match('/^[a-zA-Z0-9_]{3,30}$/',$username)) $errors['username']='Use 3–30 letters, numbers, or underscores.';

@@ -146,6 +146,14 @@
               <label class="flex items-start gap-2 font-normal cursor-pointer" for="terms"><input type="checkbox" id="terms" name="terms" required aria-required="true" class="mt-1 w-auto shrink-0 accent-[#3b54b0]" /><span class="text-sm text-[#1a1f36]">I agree to the <a href="about.html" class="font-semibold text-[#3b54b0] hover:underline">Terms of Service</a> and <a href="about.html" class="font-semibold text-[#3b54b0] hover:underline">Privacy Policy</a>.</span></label>
             </div>
 
+            <div class="form-field col-span-1 md:col-span-2">
+              <label for="captcha-input" class="font-semibold text-sm text-[#1a1f36]">Security check</label>
+              <canvas id="captcha-canvas" width="220" height="64" aria-label="Registration CAPTCHA"></canvas>
+              <input id="captcha-input" name="captcha" type="text" required autocomplete="off" aria-describedby="captcha-error" placeholder="Enter the code shown above" />
+              <span class="field-error" id="captcha-error" aria-hidden="true"></span>
+              <button type="button" id="captcha-refresh">New code</button>
+            </div>
+
             <div class="col-span-1 md:col-span-2 mt-2"><button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm bg-[#fbbf24] text-[#0f1729] border-2 border-[#fbbf24] hover:bg-[#fcd34d] hover:border-[#fcd34d] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(251,191,36,0.4)] transition-all duration-250">Create My Account</button></div>
           </div>
           <p class="form-success" data-form-success role="status" tabindex="-1" hidden></p>
